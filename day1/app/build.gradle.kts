@@ -1,17 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
 }
+apply("../manifest.gradle.kts")
 
 android {
     namespace = "fan.akua.day1"
-    compileSdk = 34
+    compileSdk = extra["targetSdk"] as Int
 
     defaultConfig {
         applicationId = "fan.akua.day1"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = extra["minSdk"] as Int
+        targetSdk = extra["targetSdk"] as Int
+        versionCode = extra["versionCode"] as Int
+        versionName = extra["versionName"] as String
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
