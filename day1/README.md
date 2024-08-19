@@ -14,6 +14,8 @@
 3. [x] 配置adb命令到环境变量，同时用adb命令安装到手机。
 4. [x] 使用gradle命令编译apk。
 
+> 使用adb安装指令为 adb install xxx.apk
+
 <div>
     <a href="https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/raw/main/day1/app/release/app-release.apk?inline=false">Download Release App</a>
     <br>
