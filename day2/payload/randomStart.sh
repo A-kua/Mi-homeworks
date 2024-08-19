@@ -52,3 +52,4 @@ for i in {1..5}; do
 done
 
 echo "执行顺序: $result"
+adb shell dumpsys activity activities
