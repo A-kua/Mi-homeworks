@@ -15,8 +15,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         binding = ActivityHelloBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.tvAppName.setText("This is a demo.");
     }
 }
-//Activity
-//Xml
-//        setContentView
