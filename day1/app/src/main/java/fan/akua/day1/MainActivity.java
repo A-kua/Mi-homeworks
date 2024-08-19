@@ -17,3 +17,6 @@ public class MainActivity extends Activity {
         setContentView(binding.getRoot());
     }
 }
+//Activity
+//Xml
+//        setContentView

@@ -19,16 +19,21 @@ android {
 
     buildTypes {
         release {
+            buildConfigField("boolean", "DEBUG_MODE", "false")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }
+        debug {
+            buildConfigField("boolean", "DEBUG_MODE", "true")
+        }
     }
     buildFeatures {
         viewBinding = true
         dataBinding = true
+        buildConfig = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
