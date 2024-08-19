@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
+import android.os.RemoteException;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -15,15 +18,16 @@ import fan.akua.day2.databinding.ActivityControllerBinding;
 
 public class ServiceControllerActivity extends Activity {
     protected ActivityControllerBinding binding;
+    protected Messenger messenger;
     protected final ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-
+            messenger = new Messenger(service);
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-
+            messenger = null;
         }
     };
 
@@ -46,6 +50,22 @@ public class ServiceControllerActivity extends Activity {
         });
         binding.unbind.setOnClickListener(v -> {
             unbindService(serviceConnection);
+        });
+        binding.send.setOnClickListener(v -> {
+            String msg = binding.ed.getText().toString();
+            Message obtain = Message.obtain(null, TestService.MSG_FROM_CLIENT);
+            Bundle bundle = new Bundle();
+            bundle.putString(TestService.DATA_KEY, msg);
+            obtain.setData(bundle);
+            if (messenger == null) {
+                binding.tv.setText("需要先bind一下");
+                return;
+            }
+            try {
+                messenger.send(obtain);
+            } catch (RemoteException e) {
+                binding.tv.setText("崩溃 " + e.getLocalizedMessage());
+            }
         });
     }
 }
