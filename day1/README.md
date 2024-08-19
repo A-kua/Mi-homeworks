@@ -20,14 +20,14 @@
     <a href="https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/raw/main/day1/app/release/app-release.apk?inline=false">Download Release App</a>
     <br>
     <p align="center"><strong>作业截图</strong></p>
+</div>
 
-    <div>
-        <img src="pic/screen-1.png" alt="展示" width="50%">
-        <img src="pic/screen-2.png" alt="上传" width="50%">
 
-    </div>
-    <div>
-        <img src="pic/screen-3.png" alt="adb" width="50%">
-        <img src="pic/screen-4.png" alt="gradle编译" width="50%">
+<div style="display: flex;">
+    <img src="pic/screen-1.png" alt="展示" width="32%">
+    <img src="pic/screen-2.png" alt="上传" width="32%">
+    <div style="display: flex; flex-direction: column;">
+        <img src="pic/screen-3.png" alt="adb" width="32%">
+        <img src="pic/screen-4.png" alt="gradle编译" width="32%">
     </div>
 </div>
