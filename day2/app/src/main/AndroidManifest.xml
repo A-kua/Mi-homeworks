@@ -50,6 +50,13 @@
                 <action android:name="fan.akua.test" />
             </intent-filter>
         </receiver>
+        <provider
+            android:name=".TestContentProvider"
+            android:authorities="fan.akua.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="fan.akua.provider.permission" />
+
     </application>
 
 </manifest>
