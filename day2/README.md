@@ -174,7 +174,7 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 
 编写xml
 
-![xml、](pic/67833437198366.png)
+![xml](pic/67833437198366.png)
 
 运行效果如下
 
@@ -183,3 +183,5 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 <div>
     <video src="pic/20240820_140349.mp4"></video>
 </div>
+
+> 鄙人还另实现了Aidl通信，详细可见AIDLService、AIDLActivity。
