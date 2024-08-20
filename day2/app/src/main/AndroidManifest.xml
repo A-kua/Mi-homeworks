@@ -87,6 +87,14 @@
             android:name=".aidl.AIDLService"
             android:exported="false"
             android:process=":other2" />
+
+        <receiver
+            android:name=".broadcast.TestBroadcast2"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="fan.akua.day2.broadcast" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
