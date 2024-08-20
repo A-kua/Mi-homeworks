@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程讲了简单介绍四大组件；了解Activity生命周期；logcat使用；dumpsys查看Activity栈；
+    今日课程讲了简单介绍四大组件；了解Activity生命周期；logcat使用；dumpsys查看Activity栈；Activity的显式、隐式启动；
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
@@ -11,6 +11,7 @@
 
 1. [x] 新建Activity，通过日志打印，熟悉生命周期执行顺序。
 2. [x] 为Activity设置不同的启动模式并通过adb命令进行查看栈信息，同时打印生命周期日志。（注意：要打印onNewIntent周期）
+3. [x] 使用隐式Intent启动拨号、手机联系人、短信。
 
 <div>
     <br>
@@ -131,3 +132,23 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 ```
 
 ![查看栈顶](pic/153164655096260.png)
+
+### 任务三
+
+声明Activity
+
+![清单](pic/495556760788254.png)
+
+编写XML
+
+![布局](pic/458767140676466.png)
+
+编写代码
+
+![代码](pic/271166564244893.png)
+
+运行效果如下
+
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day2/pic/Screen_recording_20240820_105620.mp4)
+
+<video src="pic/Screen_recording_20240820_105620.mp4></video>
