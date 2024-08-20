@@ -2,7 +2,7 @@
 
 相关的文件如下：
 1. [App.java](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/app/src/main/java/fan/akua/day2/App.java)
-2. [ServiceControllerActivity.java](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/app/src/main/aidl/fan/akua/day2/activities/ServiceControllerActivity.java)
+2. [ServiceControllerActivity.java](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/app/src/main/java/fan/akua/day2/activities/ServiceControllerActivity.java)
 
 ### 直接在Application中注册Activity周期回调
 
@@ -38,7 +38,7 @@
 
 ### 小结
 
-Activity的生命周期如下  
+Activity的生命周期如下
 
 ```text
 + - - - - - - - - - - -+
