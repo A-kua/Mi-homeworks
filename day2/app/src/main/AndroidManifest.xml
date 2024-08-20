@@ -25,7 +25,16 @@
         <activity
             android:name=".StartActivity"
             android:exported="true"
-            android:label="ServiceController">
+            android:label="Intent跳转">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AIDLActivity"
+            android:exported="true"
+            android:label="Aidl">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
