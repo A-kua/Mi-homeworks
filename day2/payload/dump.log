@@ -1,0 +1,314 @@
+C:\Projects\AndroidStudioProjects\homework\day2 git:[main]
+adb shell dumpsys activity activities
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+
+  Stack #71: type=standard mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+    Task id #106
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+      userId=0 effectiveUid=u0a205 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=com.android.shell
+      affinity=fan.akua.day2
+      intent={flg=0x10000000 cmp=fan.akua.day2/.SingleTopActivity}
+      mActivityComponent=fan.akua.day2/.SingleTopActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=4 activityType=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{8fa5bc1 u0 fan.akua.day2/.SingleTopActivity t106}, ActivityRecord{a018249 u0 fan.akua.day2/.StandardActivity t106}, ActivityRecord{6e36e75 u0 fan.akua.day2/.SingleTaskActivity t106}, ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      mRootProcess=ProcessRecord{de1920e 1644:fan.akua.day2/u0a205}
+      stackId=71
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true supportsSplitScreenWindowingMode=true lastActiveTime=65313627 (inactive for 21s)
+      * Hist #3: ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+          packageName=fan.akua.day2 processName=fan.akua.day2
+          launchedFromUid=2000 launchedFromPackage=com.android.shell userId=0
+          app=ProcessRecord{de1920e 1644:fan.akua.day2/u0a205}
+          Intent { flg=0x10000000 cmp=fan.akua.day2/.StandardActivity }
+          frontOfTask=false task=TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+          taskAffinity=fan.akua.day2
+          mActivityComponent=fan.akua.day2/.StandardActivity
+          baseDir=/data/app/fan.akua.day2-vtBKeCa0U8wOdejwbb77Kw==/base.apk
+          dataDir=/data/user/0/fan.akua.day2
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={440dpi} labelRes=0x7f0f001c icon=0x7f0d0000 theme=0x7f100221
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.542 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff6200ee
+           backgroundColor=fffafafa
+           statusBarColor=ff3700b3
+           navigationBarColor=ffffffff
+          launchFailed=false launchCount=1 lastLaunchTime=-12m13s818ms
+          haveState=false icicle=null
+          state=RESUMED stopped=false delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=true mIsCastMode=false mIsLastFrame=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+           nowVisible=true lastVisibleTime=-21s624ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=fan.akua.day2/.SingleTopActivity
+      * Hist #2: ActivityRecord{6e36e75 u0 fan.akua.day2/.SingleTaskActivity t106}
+          packageName=fan.akua.day2 processName=fan.akua.day2
+          launchedFromUid=2000 launchedFromPackage=com.android.shell userId=0
+          app=ProcessRecord{de1920e 1644:fan.akua.day2/u0a205}
+          Intent { flg=0x10000000 cmp=fan.akua.day2/.SingleTaskActivity }
+          frontOfTask=false task=TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+          taskAffinity=fan.akua.day2
+          mActivityComponent=fan.akua.day2/.SingleTaskActivity
+          baseDir=/data/app/fan.akua.day2-vtBKeCa0U8wOdejwbb77Kw==/base.apk
+          dataDir=/data/user/0/fan.akua.day2
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={440dpi} labelRes=0x7f0f001c icon=0x7f0d0000 theme=0x7f100221
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.542 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.2 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.2 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff6200ee
+           backgroundColor=fffafafa
+           statusBarColor=ff3700b3
+           navigationBarColor=ffffffff
+          launchFailed=false launchCount=0 lastLaunchTime=-12m15s17ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=632]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false mIsCastMode=false mIsLastFrame=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+           nowVisible=false lastVisibleTime=-12m14s485ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=fan.akua.day2/.StandardActivity
+      * Hist #1: ActivityRecord{a018249 u0 fan.akua.day2/.StandardActivity t106}
+          packageName=fan.akua.day2 processName=fan.akua.day2
+          launchedFromUid=2000 launchedFromPackage=com.android.shell userId=0
+          app=ProcessRecord{de1920e 1644:fan.akua.day2/u0a205}
+          Intent { flg=0x10000000 cmp=fan.akua.day2/.StandardActivity }
+          frontOfTask=false task=TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+          taskAffinity=fan.akua.day2
+          mActivityComponent=fan.akua.day2/.StandardActivity
+          baseDir=/data/app/fan.akua.day2-vtBKeCa0U8wOdejwbb77Kw==/base.apk
+          dataDir=/data/user/0/fan.akua.day2
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={440dpi} labelRes=0x7f0f001c icon=0x7f0d0000 theme=0x7f100221
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.542 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff6200ee
+           backgroundColor=fffafafa
+           statusBarColor=ff3700b3
+           navigationBarColor=ffffffff
+          launchFailed=false launchCount=0 lastLaunchTime=-12m16s226ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=632]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false mIsCastMode=false mIsLastFrame=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+           nowVisible=false lastVisibleTime=-12m15s695ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=fan.akua.day2/.SingleTaskActivity
+      * Hist #0: ActivityRecord{8fa5bc1 u0 fan.akua.day2/.SingleTopActivity t106}
+          packageName=fan.akua.day2 processName=fan.akua.day2
+          launchedFromUid=2000 launchedFromPackage=com.android.shell userId=0
+          app=ProcessRecord{de1920e 1644:fan.akua.day2/u0a205}
+          Intent { flg=0x10000000 cmp=fan.akua.day2/.SingleTopActivity }
+          frontOfTask=true task=TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+          taskAffinity=fan.akua.day2
+          mActivityComponent=fan.akua.day2/.SingleTopActivity
+          baseDir=/data/app/fan.akua.day2-vtBKeCa0U8wOdejwbb77Kw==/base.apk
+          dataDir=/data/user/0/fan.akua.day2
+          stateNotNeeded=false componentSpecified=true mActivityType=standard
+          compat={440dpi} labelRes=0x7f0f001c icon=0x7f0d0000 theme=0x7f100221
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.542 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ff6200ee
+           backgroundColor=fffafafa
+           statusBarColor=ff3700b3
+           navigationBarColor=ffffffff
+          launchFailed=false launchCount=0 lastLaunchTime=-12m17s295ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=632]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false mIsCastMode=false mIsLastFrame=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_REMOVED
+          fullscreen=true noDisplay=false immersive=false launchMode=1
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+           nowVisible=false lastVisibleTime=-12m16s517ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=fan.akua.day2/.StandardActivity
+
+    Running activities (most recent first):
+      TaskRecord{7a72009 #106 A=fan.akua.day2 U=0 StackId=71 sz=4}
+        Run #3: ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+        Run #2: ActivityRecord{6e36e75 u0 fan.akua.day2/.SingleTaskActivity t106}
+        Run #1: ActivityRecord{a018249 u0 fan.akua.day2/.StandardActivity t106}
+        Run #0: ActivityRecord{8fa5bc1 u0 fan.akua.day2/.SingleTopActivity t106}
+
+    mResumedActivity: ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+    mLastPausedActivity: ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+
+  Stack #0: type=home mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+
+    Task id #1
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{bef1e08 #1 I=com.miui.home/.launcher.Launcher U=0 StackId=0 sz=1}
+      userId=0 effectiveUid=u0a86 mCallingUid=0 mUserSetupComplete=true mCallingPackage=null
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800100 cmp=com.miui.home/.launcher.Launcher}
+      mActivityComponent=com.miui.home/.launcher.Launcher
+      autoRemoveRecents=false isPersistable=false numFullscreen=1 activityType=2
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{a0c9f73 u0 com.miui.home/.launcher.Launcher t1}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      stackId=0
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE mSupportsPictureInPicture=false isResizeable=true supportsSplitScreenWindowingMode=true lastActiveTime=64598145 (inactive for 737s)
+      * Hist #0: ActivityRecord{a0c9f73 u0 com.miui.home/.launcher.Launcher t1}
+          packageName=com.miui.home processName=com.miui.home
+          launchedFromUid=0 launchedFromPackage=null userId=0
+          app=ProcessRecord{344d769 2823:com.miui.home/u0a86}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10800100 cmp=com.miui.home/.launcher.Launcher }
+          frontOfTask=true task=TaskRecord{bef1e08 #1 I=com.miui.home/.launcher.Launcher U=0 StackId=0 sz=1}
+          taskAffinity=null
+          mActivityComponent=com.miui.home/.launcher.Launcher
+          baseDir=/system/priv-app/MiuiHome/MiuiHome.apk
+          dataDir=/data/user/0/com.miui.home
+          stateNotNeeded=true componentSpecified=false mActivityType=home
+          compat={440dpi} labelRes=0x7f10008c icon=0x7f080150 theme=0x7f1100c4
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.20 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=home mAlwaysOnTop=undefined mRotation=ROTATION_0} s.6 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=home mAlwaysOnTop=undefined mRotation=ROTATION_0} s.22 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          RequestedOverrideConfiguration={0.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav
+/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mWindowingMode=undefined mDisplayWindowingMode=undefined mActivityType=home mAlwaysOnTop=undefined mRotation=undefined} themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=0 iconFilename=null primaryColor=ffe6e6e6
+           backgroundColor=ff000000
+           statusBarColor=ff000000
+           navigationBarColor=0
+          launchFailed=false launchCount=0 lastLaunchTime=-18h8m33s539ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=12732]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false mIsCastMode=false mIsLastFrame=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=home
+           nowVisible=false lastVisibleTime=-15m33s836ms
+          connections=com.android.server.wm.ActivityServiceConnectionsHolder@22669a1
+          resizeMode=RESIZE_MODE_RESIZEABLE
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=com.miui.home/.launcher.Launcher
+
+    Running activities (most recent first):
+      TaskRecord{bef1e08 #1 I=com.miui.home/.launcher.Launcher U=0 StackId=0 sz=1}
+        Run #0: ActivityRecord{a0c9f73 u0 com.miui.home/.launcher.Launcher t1}
+
+    mLastPausedActivity: ActivityRecord{a0c9f73 u0 com.miui.home/.launcher.Launcher t1}
+
+  Stack #25: type=standard mode=fullscreen
+  isSleeping=false
+  mBounds=Rect(0, 0 - 0, 0)
+
+    Task id #60
+    mBounds=Rect(0, 0 - 0, 0)
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{55c12b4 #60 A=com.android.settings U=0 StackId=25 sz=1}
+      userId=0 effectiveUid=1000 mCallingUid=1000 mUserSetupComplete=true mCallingPackage=android
+      affinity=com.android.settings
+      intent={act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS flg=0x10008000 cmp=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity}
+      mActivityComponent=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 activityType=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{acb1e6 u0 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity t60}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      stackId=25
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION mSupportsPictureInPicture=false isResizeable=true supportsSplitScreenWindowingMode=true lastActiveTime=24893966 (inactive for 40441s)
+      * Hist #0: ActivityRecord{acb1e6 u0 com.android.settings/.Settings$DevelopmentSettingsDashboardActivity t60}
+          packageName=com.android.settings processName=com.android.settings
+          launchedFromUid=1000 launchedFromPackage=android userId=0
+          app=null
+          Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS flg=0x10008000 cmp=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity }
+          frontOfTask=true task=TaskRecord{55c12b4 #60 A=com.android.settings U=0 StackId=25 sz=1}
+          taskAffinity=com.android.settings
+          mActivityComponent=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity
+          baseDir=/system/product/priv-app/Settings/Settings.apk
+          dataDir=/data/user_de/0/com.android.settings
+          stateNotNeeded=false componentSpecified=false mActivityType=standard
+          compat={440dpi} labelRes=0x7f1207fa icon=0x7f08051a theme=0x7f130373
+          mLastReportedConfigurations:
+           mGlobalConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mApp
+Bounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.542 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+           mOverrideConfig={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248) mA
+ppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          CurrentConfiguration={1.0 ?mcc?mnc [zh_CN] ldltr sw392dp w392dp h769dp 440dpi nrml long hdr widecg port finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2248
+) mAppBounds=Rect(0, 89 - 1080, 2204) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} s.1 themeChanged=0 themeChangedFlags=0 extraData = Bundle[{}]}
+          taskDescription: label="null" icon=null iconResource=2131231756 iconFilename=null primaryColor=ffe6e6e6
+           backgroundColor=ff000000
+           statusBarColor=ff000000
+           navigationBarColor=ffffffff
+          launchFailed=false launchCount=0 lastLaunchTime=-11h14m43s535ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=19152]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false mIsCastMode=false mIsLastFrame=false sleeping=true idle=true mStartingWindowState=STARTING_WINDOW_REMOVED
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=standard
+           nowVisible=false lastVisibleTime=-11h14m42s716ms
+          resizeMode=RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION
+          mLastReportedMultiWindowMode=false mLastReportedPictureInPictureMode=false
+          realComponentName=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity
+
+ ResumedActivity:ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+
+  ResumedActivity: ActivityRecord{608bc47 u0 fan.akua.day2/.StandardActivity t106}
+
+ActivityStackSupervisor state:
+  topDisplayFocusedStack=ActivityStack{85fa42f stackId=71 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}
+  displayId=0 stacks=3
+   mHomeStack=ActivityStack{7c80a52 stackId=0 type=home mode=fullscreen visible=false translucent=true, 1 tasks}
+   mPreferredTopFocusableStack=ActivityStack{85fa42f stackId=71 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}
+   mLastFocusedStack=ActivityStack{85fa42f stackId=71 type=standard mode=fullscreen visible=true translucent=false, 1 tasks}
+  mCurTaskIdForUser={0=106}
+  mUserStackInFront={}
+  isHomeRecentsComponent=true  KeyguardController:
+    mKeyguardShowing=false
+    mAodShowing=false
+    mKeyguardGoingAway=false
+    Occluded=false DismissingKeyguardActivity=null at display=0
+    mDismissalRequested=false
+    mVisibilityTransactionDepth=0
+  LockTaskController
+    mLockTaskModeState=NONE
+    mLockTaskModeTasks=
+    mLockTaskPackages (userId:packages)=
+      u0:[]
