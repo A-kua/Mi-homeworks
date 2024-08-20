@@ -36,6 +36,7 @@
 然后`adb shell am start -n fan.akua.day2/fan.akua.day2.ServiceControllerActivity`
 
 ![shell](pic/167794501281329.png)
+
 设置过滤器观察日志
 
 `package:mine level:debug tag=:fan.akua.day2.App`
