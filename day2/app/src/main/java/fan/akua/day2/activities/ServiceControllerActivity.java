@@ -1,4 +1,4 @@
-package fan.akua.day2;
+package fan.akua.day2.activities;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -13,6 +13,7 @@ import android.os.RemoteException;
 import androidx.annotation.Nullable;
 
 import fan.akua.day2.databinding.ActivityControllerBinding;
+import fan.akua.day2.service.TestService;
 
 public class ServiceControllerActivity extends Activity {
     protected ActivityControllerBinding binding;

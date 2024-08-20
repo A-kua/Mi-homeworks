@@ -1,4 +1,4 @@
-package fan.akua.day2;
+package fan.akua.day2.service;
 
 import android.app.Service;
 import android.content.Intent;

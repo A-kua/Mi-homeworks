@@ -36,7 +36,7 @@
 
 ![清单](pic/597571664544483.png)
 
-然后`adb shell am start -n fan.akua.day2/fan.akua.day2.ServiceControllerActivity`
+然后`adb shell am start -n fan.akua.day2/fan.akua.day2.activities.ServiceControllerActivity`
 
 ![shell](pic/167794501281329.png)
 
@@ -203,7 +203,7 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 
 ![代码](pic/160403389425276.png)
 
-logcat过滤器为`package:mine level:debug tag=:fan.akua.day2.TestBroadcast`
+logcat过滤器为`package:mine level:debug tag=:fan.akua.day2.broadcast.TestBroadcast`
 
 运行效果如下
 

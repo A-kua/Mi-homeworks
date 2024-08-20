@@ -1,11 +1,11 @@
-package fan.akua.day2;
+package fan.akua.day2.launchMode;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 
-public class SingleTopActivity extends Activity {
-    private static final String TAG = SingleTopActivity.class.getName();
+public class StandardActivity extends Activity {
+    private static final String TAG = StandardActivity.class.getName();
 
     @Override
     protected void onNewIntent(Intent intent) {

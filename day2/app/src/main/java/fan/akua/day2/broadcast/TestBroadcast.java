@@ -1,4 +1,4 @@
-package fan.akua.day2;
+package fan.akua.day2.broadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

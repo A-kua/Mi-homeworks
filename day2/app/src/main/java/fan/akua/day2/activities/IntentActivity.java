@@ -1,29 +1,28 @@
-package fan.akua.day2;
+package fan.akua.day2.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Contacts;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import fan.akua.day2.databinding.LayoutStartBinding;
+import fan.akua.day2.databinding.ActivityIntentBinding;
 
-public class StartActivity extends Activity {
-    protected LayoutStartBinding binding;
+public class IntentActivity extends Activity {
+    protected ActivityIntentBinding binding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = LayoutStartBinding.inflate(getLayoutInflater());
+        binding = ActivityIntentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.call.setOnClickListener(v -> {
             if (binding.callNum.getText().toString().isEmpty()) {
-                Toast.makeText(StartActivity.this, "请填写内容", Toast.LENGTH_SHORT).show();
+                Toast.makeText(IntentActivity.this, "请填写内容", Toast.LENGTH_SHORT).show();
                 return;
             }
             Uri telUri = Uri.parse("tel:" + binding.callNum.getText().toString());
@@ -38,7 +37,7 @@ public class StartActivity extends Activity {
         });
         binding.openMessage.setOnClickListener(v -> {
             if (binding.callNum.getText().toString().isEmpty()) {
-                Toast.makeText(StartActivity.this, "请填写内容", Toast.LENGTH_SHORT).show();
+                Toast.makeText(IntentActivity.this, "请填写内容", Toast.LENGTH_SHORT).show();
                 return;
             }
             Uri telUri = Uri.parse("smsto:" + binding.callNum.getText().toString());

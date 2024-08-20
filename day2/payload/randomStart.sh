@@ -3,10 +3,10 @@
 # adb logcat 过滤规则为 package:mine level:debug tag=:fan.akua.day2.App
 
 APP_PACKAGE="fan.akua.day2"
-StandardActivity_CLASS="$APP_PACKAGE.StandardActivity"
-SingleInstanceActivity_CLASS="$APP_PACKAGE.SingleInstanceActivity"
-SingleTaskActivity_CLASS="$APP_PACKAGE.SingleTaskActivity"
-SingleTopActivity_CLASS="$APP_PACKAGE.SingleTopActivity"
+StandardActivity_CLASS="$APP_PACKAGE.launchMode.StandardActivity"
+SingleInstanceActivity_CLASS="$APP_PACKAGE.launchMode.SingleInstanceActivity"
+SingleTaskActivity_CLASS="$APP_PACKAGE.launchMode.SingleTaskActivity"
+SingleTopActivity_CLASS="$APP_PACKAGE.launchMode.SingleTopActivity"
 
 if ! command -v adb &> /dev/null
 then
@@ -33,6 +33,7 @@ function startSingleTaskActivity() {
     adb shell am start -n $APP_PACKAGE/$SingleTaskActivity_CLASS &> /dev/null
     echo "singleTask"
 }
+
 function startSingleTopActivity() {
     adb shell am start -n $APP_PACKAGE/$SingleTopActivity_CLASS &> /dev/null
     echo "singleTop"

@@ -1,8 +1,8 @@
-package fan.akua.day2;
+package fan.akua.day2.broadcast;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -27,7 +27,7 @@ public class BroadcastActivity extends Activity {
             @Override
             public void onClick(View v) {
                 IntentFilter intentFilter = new IntentFilter();
-                intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
+                intentFilter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
                 registerReceiver(testBroadcast, intentFilter);
             }
         });
