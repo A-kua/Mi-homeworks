@@ -43,13 +43,3 @@
 | [作业1](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/Day2-HW1.md) | [作业2](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/Day2-HW2.md) |
 | [作业3](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/Day2-HW3.md) | [作业4](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day2/Day2-HW4.md) |
 
-查看当前栈顶Activity的指令如下
-```shell
-adb -d shell dumpsys activity activities | grep mResumedActivity
-```
-
-![查看栈顶](pic/153164655096260.png)
-
-## 今日作业报告
-
-### 作业一
