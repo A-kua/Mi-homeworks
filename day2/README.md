@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程讲了简单介绍四大组件；了解Activity生命周期；logcat使用；dumpsys查看Activity栈；Activity的显式、隐式启动；
+    今日课程讲了简单介绍四大组件；了解Activity生命周期；logcat使用；dumpsys查看Activity栈；Activity的显式、隐式启动；Service与Messenger；AIDL跨进程通信实战；
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
@@ -12,6 +12,7 @@
 1. [x] 新建Activity，通过日志打印，熟悉生命周期执行顺序。
 2. [x] 为Activity设置不同的启动模式并通过adb命令进行查看栈信息，同时打印生命周期日志。（注意：要打印onNewIntent周期）
 3. [x] 使用隐式Intent启动拨号、手机联系人、短信。
+4. [x] 通过绑定服务的方式实现组件间通信，实现Activity与Service通信。
 
 <div>
     <br>
@@ -153,4 +154,32 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 
 <div>
     <video src="pic/Screen_recording_20240820_105620.mp4"></video>
+</div>
+
+### 任务四
+
+这里选择Messenger
+
+首先声明一个在独立进程的service
+
+![声明](pic/363679201881219.png)
+
+在代码中定义Messeenger，并通过onBind返回
+
+![代码实现](pic/397402958037165.png)
+
+在Activity中定义startService、stopService、bindService、unbindService操作
+
+![Activity代码](pic/76422441705956.png)
+
+编写xml
+
+![xml、](pic/67833437198366.png)
+
+运行效果如下
+
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day2/pic/20240820_140349.mp4)
+
+<div>
+    <video src="pic/20240820_140349.mp4"></video>
 </div>

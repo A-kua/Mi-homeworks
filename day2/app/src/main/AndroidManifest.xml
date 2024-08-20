@@ -52,6 +52,13 @@
             android:name=".TestService"
             android:exported="false"
             android:process=":other" />
+
+        <service
+            android:name=".AIDLService"
+            android:exported="false"
+            android:process=":other2" />
+
+
         <receiver
             android:name=".TestBroadcast"
             android:exported="false">
