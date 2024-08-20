@@ -24,24 +24,24 @@ function startStander() {
     echo "stander"
 }
 
-function startSingleTask() {
+function startSingleInstance() {
     adb shell am start -n $APP_PACKAGE/$SingleInstanceActivity_CLASS &> /dev/null
-    echo "singleTask"
+    echo "singleInstance"
 }
 
-function startSingleTaskActivity() {
+function startSingleTask() {
     adb shell am start -n $APP_PACKAGE/$SingleTaskActivity_CLASS &> /dev/null
     echo "singleTask"
 }
 
-function startSingleTopActivity() {
+function startSingleTop() {
     adb shell am start -n $APP_PACKAGE/$SingleTopActivity_CLASS &> /dev/null
     echo "singleTop"
 }
 
 stop_app $APP_PACKAGE
 
-functions=(startStander startSingleTask startSingleTaskActivity startSingleTopActivity)
+functions=(startStander startSingleInstance startSingleTask startSingleTop)
 result=""
 for i in {1..5}; do
     func_name=${functions[$((RANDOM % ${#functions[@]}))]}
