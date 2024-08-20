@@ -13,6 +13,7 @@
 2. [x] 为Activity设置不同的启动模式并通过adb命令进行查看栈信息，同时打印生命周期日志。（注意：要打印onNewIntent周期）
 3. [x] 使用隐式Intent启动拨号、手机联系人、短信。
 4. [x] 通过绑定服务的方式实现组件间通信，实现Activity与Service通信。
+5. [x] 查询了解广播接收器如何异步处理任务，使用goAsync()方式实现异步任务处理。
 
 <div>
     <br>
@@ -185,3 +186,29 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 </div>
 
 > 鄙人还另实现了Aidl通信，详细可见AIDLService、AIDLActivity。
+
+### 任务五
+
+本人选择监听网络变化
+
+先在清单声明Activity
+
+![清单](pic/362183961312621.png)
+
+编写Activity代码
+
+![代码](pic/560234897247856.png)
+
+编写BroadcastReceiver代码
+
+![代码](pic/160403389425276.png)
+
+logcat过滤器为`package:mine level:debug tag=:fan.akua.day2.TestBroadcast`
+
+运行效果如下
+
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day2/pic/20240820_151420.mp4)
+
+<div>
+    <video src="pic/20240820_151420.mp4"></video>
+</div>

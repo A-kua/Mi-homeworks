@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -41,6 +43,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".BroadcastActivity"
+            android:exported="true"
+            android:label="Broadcast">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".StandardActivity"
             android:exported="true"
             android:launchMode="standard" />
@@ -67,7 +78,6 @@
             android:exported="false"
             android:process=":other2" />
 
-
         <receiver
             android:name=".TestBroadcast"
             android:exported="false">
@@ -75,6 +85,7 @@
                 <action android:name="fan.akua.test" />
             </intent-filter>
         </receiver>
+
         <provider
             android:name=".TestContentProvider"
             android:authorities="fan.akua.provider"
