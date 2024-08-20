@@ -22,11 +22,15 @@
     <br>
 </div>
 
-1. [ ] 打印四种启动模式启动Activity的生命周期并总结。
+1. [x] 打印四种启动模式启动Activity的生命周期并总结。
 2. [x] 打印startService和bindService生命周期并总结。
 3. [x] 分别使用动态注册和静态注册广播，并接受广播日志。
 4. [x] 使用AIDL进行跨进程通信。
 
+<div>
+    <a href="https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/raw/main/day2/app/release/app-release.apk?inline=false">Download Release App</a>
+    <br>
+</div>
 
 ## 课堂练习报告
 
