@@ -16,7 +16,7 @@ public class TestService extends Service {
     public static final String DATA_KEY = "simon";
     private final Messenger mMessenger = new Messenger(new H());
 
-    private class H extends Handler {
+    private static class H extends Handler {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {

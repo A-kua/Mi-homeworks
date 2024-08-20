@@ -1,7 +1,6 @@
 package fan.akua.day2;
 
 import android.app.Activity;
-import android.app.Service;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -10,7 +9,6 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 
@@ -42,6 +40,7 @@ public class ServiceControllerActivity extends Activity {
         });
         binding.stop.setOnClickListener(v -> {
             Intent intent = new Intent(ServiceControllerActivity.this, TestService.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             stopService(intent);
         });
         binding.bind.setOnClickListener(v -> {

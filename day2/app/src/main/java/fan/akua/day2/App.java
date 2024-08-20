@@ -47,7 +47,7 @@ public class App extends Application {
 
             @Override
             public void onActivityStopped(@NonNull Activity activity) {
-                Log.d(TAG, "onSto: " + activity.getLocalClassName());
+                Log.d(TAG, "onStop: " + activity.getLocalClassName());
             }
 
             @Override
