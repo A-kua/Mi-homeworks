@@ -151,4 +151,6 @@ adb -d shell dumpsys activity activities | grep mResumedActivity
 
 [视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day2/pic/Screen_recording_20240820_105620.mp4)
 
-<video src="pic/Screen_recording_20240820_105620.mp4></video>
+<div>
+    <video src="pic/Screen_recording_20240820_105620.mp4"></video>
+</div>
