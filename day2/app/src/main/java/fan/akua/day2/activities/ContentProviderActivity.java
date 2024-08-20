@@ -12,18 +12,18 @@ import androidx.annotation.Nullable;
 
 import java.util.Arrays;
 
-import fan.akua.day2.databinding.ActivityPhotoBinding;
+import fan.akua.day2.databinding.ActivityProviderBinding;
 
 public class ContentProviderActivity extends Activity {
     private static final String TAG = ContentProviderActivity.class.getName();
 
-    protected ActivityPhotoBinding binding;
+    protected ActivityProviderBinding binding;
     protected ContentResolver mContentResolver;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityPhotoBinding.inflate(getLayoutInflater());
+        binding = ActivityProviderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         mContentResolver = ContentProviderActivity.this.getContentResolver();
         binding.read.setOnClickListener(v -> {

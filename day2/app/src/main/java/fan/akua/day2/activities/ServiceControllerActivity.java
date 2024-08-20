@@ -12,11 +12,12 @@ import android.os.RemoteException;
 
 import androidx.annotation.Nullable;
 
-import fan.akua.day2.databinding.ActivityControllerBinding;
+import fan.akua.day2.databinding.ActivityAidlBinding;
+import fan.akua.day2.databinding.ActivityServiceBinding;
 import fan.akua.day2.service.TestService;
 
 public class ServiceControllerActivity extends Activity {
-    protected ActivityControllerBinding binding;
+    protected ActivityServiceBinding binding;
     protected Messenger messenger;
     protected final ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
@@ -33,7 +34,7 @@ public class ServiceControllerActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityControllerBinding.inflate(getLayoutInflater());
+        binding = ActivityServiceBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.start.setOnClickListener(v -> {
             Intent intent = new Intent(ServiceControllerActivity.this, TestService.class);
