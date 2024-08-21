@@ -22,8 +22,8 @@ Replace操作会替换添加的Fragment
 
 ### 运行效果如下
 
-[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3/vx_images/Screen_recording_20240821_101913.mp4)
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3/vx_images/Screen_recording_20240821_102410.mp4)
 
 <div>
-    <video src="vx_images/Screen_recording_20240821_101913.mp4"></video>
+    <video src="vx_images/Screen_recording_20240821_102410.mp4"></video>
 </div>
