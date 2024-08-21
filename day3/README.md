@@ -10,6 +10,7 @@
 </div>
 
 1. [x] 掌握创建并显示Fragment的两种方式。（为Fragment传递初始参数）
+2. [x] 使用add、show、hide、replace操作Fragment。
 
 
 <div>
