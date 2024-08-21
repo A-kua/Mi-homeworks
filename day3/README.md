@@ -12,6 +12,7 @@
 1. [x] 掌握创建并显示Fragment的两种方式。（为Fragment传递初始参数）
 2. [x] 使用add、show、hide、replace操作Fragment。
 3. [x] 打印Fragment的生命周期。分析add、hide、replace以及按下Home键的日志差异。
+4. [x] 掌握Fragment通信方式：点击FragmentA中的按钮，将FragmentB添加到Activity的另一个区域；FragmentB暴露一个public方法，让Activity可以修改他的背景色；使用FragmentResult API实现FragmentA接受FragmentB的返回；
 
 
 <div>
