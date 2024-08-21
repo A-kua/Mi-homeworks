@@ -35,5 +35,7 @@
 >1. 掌握创建并显示Fragment的两种方式。（为Fragment传递初始参数）
 >2. 使用add、show、hide、replace操作Fragment。
 >3. 打印Fragment的生命周期。分析add、hide、replace以及按下Home键的日志差异。
+>4. 掌握Fragment通信方式：点击FragmentA中的按钮，将FragmentB添加到Activity的另一个区域；FragmentB暴露一个public方法，让Activity可以修改他的背景色；使用FragmentResult API实现FragmentA接受FragmentB的返回；
+>5. 使用ViewPager实现水平滑动布局，在滑动页面时分析Fragment生命周期变化。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3)
