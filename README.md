@@ -37,5 +37,9 @@
 >3. 打印Fragment的生命周期。分析add、hide、replace以及按下Home键的日志差异。
 >4. 掌握Fragment通信方式：点击FragmentA中的按钮，将FragmentB添加到Activity的另一个区域；FragmentB暴露一个public方法，让Activity可以修改他的背景色；使用FragmentResult API实现FragmentA接受FragmentB的返回；
 >5. 使用ViewPager实现水平滑动布局，在滑动页面时分析Fragment生命周期变化。
+>6. 学习使用Fragment动画。为FragmentB添加进入和退出动画，并让他替换FragmentA。使用共享元素展示FragmentB。
+
+>1. 使用Fragment组成一个复杂页面：搭建App首页，一个Activity有多个Fragment；点击底部TAB切换Fragment；Fragment只显示一段文本即可；点击按钮跳转到另一个Fragment；
+>2. 使用ViewPager实现Fragment左右滑动；
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3)
