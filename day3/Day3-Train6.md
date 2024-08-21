@@ -32,7 +32,7 @@
 
 ### 运行效果如下
 
-[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3/pic/Screen_recording_20240821_165005.mp4)
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3/vx_images/Screen_recording_20240821_165005.mp4)
 
 <div>
     <video src="vx_images/Screen_recording_20240821_165005.mp4"></video>
