@@ -28,9 +28,9 @@
 
 ## 课堂练习报告
 
-|                                                                                                                                                   |    |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- |----|
-| [任务1](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day3/Day3-Train1.md) | 暂无 |
+|                                                                                                                                                   |                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [任务1](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day3/Day3-Train1.md) | [任务2](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day3/Day3-Train2.md) |
 
 ## 今日作业报告
 
