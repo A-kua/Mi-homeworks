@@ -34,5 +34,6 @@
 
 >1. 掌握创建并显示Fragment的两种方式。（为Fragment传递初始参数）
 >2. 使用add、show、hide、replace操作Fragment。
+>3. 打印Fragment的生命周期。分析add、hide、replace以及按下Home键的日志差异。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3)
