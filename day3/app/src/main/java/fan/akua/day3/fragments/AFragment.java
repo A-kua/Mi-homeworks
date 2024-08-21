@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import fan.akua.day3.R;
+import fan.akua.day3.base.BaseFragment;
 
-public class AFragment extends Fragment {
-    private static final String TAG = AFragment.class.getName();
+public class AFragment extends BaseFragment {
     public static final String KEY = "key";
 
     public static AFragment newInstance(String value) {
@@ -22,20 +22,14 @@ public class AFragment extends Fragment {
         fragment.setArguments(bundle);
         return fragment;
     }
+
     private AFragment() {
         super(R.layout.fragment_a);
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        Log.d(TAG, "onStart");
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        Log.d(TAG, "onResume");
+    protected String getLogTag() {
+        return getArguments().getString(KEY);
     }
 
     @Override
