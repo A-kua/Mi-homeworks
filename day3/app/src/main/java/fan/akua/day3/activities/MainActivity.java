@@ -2,6 +2,7 @@ package fan.akua.day3.activities;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,9 @@ import fan.akua.day3.R;
 import fan.akua.day3.fragments.AFragment;
 
 public class MainActivity extends AppCompatActivity {
+    private final AFragment aFragment = AFragment.newInstance("test");
+    private final AFragment bFragment = AFragment.newInstance("replace");
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +22,31 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             return;
         }
-        AFragment aFragment = AFragment.newInstance("test");
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.setReorderingAllowed(true);
-        transaction.add(R.id.dynamicContainer, aFragment);
-        transaction.commit();
 
+        findViewById(R.id.add).setOnClickListener(v -> {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.setReorderingAllowed(true);
+            transaction.add(R.id.dynamicContainer, aFragment);
+            transaction.commit();
+        });
+        findViewById(R.id.show).setOnClickListener(v -> {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.setReorderingAllowed(true);
+            transaction.show(aFragment);
+            transaction.commit();
+        });
+        findViewById(R.id.hide).setOnClickListener(v -> {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.setReorderingAllowed(true);
+            transaction.hide(aFragment);
+            transaction.commit();
+        });
+        findViewById(R.id.replace).setOnClickListener(v -> {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.setReorderingAllowed(true);
+            transaction.replace(R.id.dynamicContainer,bFragment);
+            transaction.commit();
+        });
 
 //        aFragment 会替换目前在 R.id.fragment_container ID 所标识的布局容器中的任何片段（如有）。
 //        通过调用 addToBackStack()，可以将替换事务保存到返回栈，以便用户能够通过按返回按钮撤消事务并回退到上一片段。
