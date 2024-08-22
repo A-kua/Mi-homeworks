@@ -11,10 +11,10 @@
 
 需要注意的是Span的flag：
 
-**SPAN_EXCLUSIVE_EXCLUSIVE** 前后都不包含
-**Spanned.SPAN_EXCLUSIVE_INCLUSIVE** 不包含前面 包含后面
-**Spanned.SPAN_INCLUSIVE_EXCLUSIVE** 包含前面，不包含后面
-**Spanned.SPAN_INCLUSIVE_INCLUSIVE** 前后都包含
+1. **SPAN_EXCLUSIVE_EXCLUSIVE** 前后都不包含
+2. **Spanned.SPAN_EXCLUSIVE_INCLUSIVE** 不包含前面 包含后面
+3. **Spanned.SPAN_INCLUSIVE_EXCLUSIVE** 包含前面，不包含后面
+4. **Spanned.SPAN_INCLUSIVE_INCLUSIVE** 前后都包含
 
 ### 运行效果如下
 

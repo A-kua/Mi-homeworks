@@ -27,8 +27,8 @@ public class RichActivity extends AppCompatActivity {
         findViewById(R.id.btn).setOnClickListener(v -> {
             String text = "这是一段富文本哦，试试下划线，试试删除线。";
             SpannableString ss = new SpannableString(text);
-            ss.setSpan(new UnderlineSpan(),text.indexOf("下划线"),text.indexOf("下划线")+3, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
-            ss.setSpan(new StrikethroughSpan(),text.indexOf("删除线"),text.indexOf("删除线")+3, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+            ss.setSpan(new UnderlineSpan(), text.indexOf("下划线"), text.indexOf("下划线") + 3, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+            ss.setSpan(new StrikethroughSpan(), text.indexOf("删除线"), text.indexOf("删除线") + 3, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
             tv.setText(ss);
 //            tv.setText(Html.fromHtml());
 //             SPAN_EXCLUSIVE_EXCLUSIVE 前后都不包含
