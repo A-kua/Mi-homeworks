@@ -50,5 +50,6 @@
 >2. 编写课上展示的布局页面。
 >3. 编写用户登录页面。
 >4. 编写一个具有ImageView、TextView、Button的页面。
+>5. 使用RecyclerView展示列表。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
