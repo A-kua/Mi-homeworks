@@ -14,6 +14,7 @@
 3. [x] 编写用户登录页面。
 4. [x] 编写一个具有ImageView、TextView、Button的页面。
 5. [x] 使用RecyclerView展示列表。
+6. [x] 点击按钮添加Item、删除Item。
 
 
 <div>
@@ -31,11 +32,11 @@
 
 ## 课堂练习报告
 
-|                                                                                                                                                   |                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                                                                                                                                   |                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- |-------------------------------------------------------------------------------------------------------------------------------------------------|
 | [任务1](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train1.md) | [任务2](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train2.md) |
 | [任务3](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train3.md) | [任务4](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train4.md) |
-| [任务5](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train5.md) | 暂无                                                                                                                                              |
+| [任务5](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train5.md) | [任务6](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-Train6.md) |
 
 ## 今日作业报告
 
