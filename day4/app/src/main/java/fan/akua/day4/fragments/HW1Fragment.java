@@ -39,8 +39,6 @@ public class HW1Fragment extends Fragment {
         ViewGroup viewGroup = view.findViewById(R.id.checkGroup);
         Button button = view.findViewById(R.id.btn);
 
-//        editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-
         seekBar.setMax(360);
         seekBar.setProgress(0);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

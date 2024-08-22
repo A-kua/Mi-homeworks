@@ -24,7 +24,9 @@
     <br>
 </div>
 
-1. [x] 暂无
+1. [x] 在一个fragment中实现拥有TextView、EditText、RadioButton、CheckBox、Button、SeekBar、ImageView。点击Button能Toast打印EditText的内容，RadioButton、CheckBox的选项。其中EditText只能输入大写字母，同时输入的大写字母要以*显示。
+2. [x] 实现一个列表（20项数据，10种不同的图片、文字，其中1、11图片相同，2、12图片相同以此类推），要求具有点击事件，Item样式需包括文字图片，并且包含列表的position信息，实现增加、删除列表项。
+3. [x] 在2的基础上，增加或者删除后，所有项显示的position值需要同步更新，支持用户页面指定放置位置（如果用户指定的值超过最大值，最后一个项的位置+1，告诉用户位置过大，小于第一个位置放在第一个位置）。
 
 <div>
     <a href="https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/raw/main/day4/app/release/app-release.apk?inline=false">Download Release App</a>
@@ -42,4 +44,7 @@
 
 ## 今日作业报告
 
-张朝斌，阅读，全局搜索，浏览器内核
+|                                                                                                                                                |                                                                                                                                                |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [作业1](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-HW1.md) | [作业2](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-HW2.md) |
+| [作业3](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/blob/main/day4/Day4-HW3.md) | 暂无                                                                                                                                           |
