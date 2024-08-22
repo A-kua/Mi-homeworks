@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -11,6 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
+
 
         <EditText
             android:layout_width="wrap_content"
@@ -44,6 +44,16 @@
         android:layout_margin="6dp"
         android:background="@drawable/btn_style2"
         android:text="登录" />
-
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_id"/>
 
 </LinearLayout>

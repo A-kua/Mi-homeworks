@@ -18,12 +18,13 @@ public class EditActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         setContentView(R.layout.activity_edittext);
 //        EditText editText = findViewById(R.id.edit);
         //android:windowSoftInputMode="adjustResize" activity
         // adjustPan上移
         // adjustResize压缩
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
 
         // 注意selfChange
 //        editText.addTextChangedListener(new TextWatcher() {
