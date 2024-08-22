@@ -47,5 +47,6 @@
 ## Day4
 
 >1. 练习使用TextView：完成富文本的下划线和删除线。
+>2. 编写课上展示的布局页面。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
