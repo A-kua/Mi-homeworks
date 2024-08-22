@@ -54,4 +54,8 @@
 >6. 点击按钮添加Item、删除Item。
 >7. 使用ViewPager实现滑动页面。
 
+>1. 在一个fragment中实现拥有TextView、EditText、RadioButton、CheckBox、Button、SeekBar、ImageView。点击Button能Toast打印EditText的内容，RadioButton、CheckBox的选项。其中EditText只能输入大写字母，同时输入的大写字母要以*显示。
+>2. 实现一个列表（20项数据，10种不同的图片、文字，其中1、11图片相同，2、12图片相同以此类推），要求具有点击事件，Item样式需包括文字图片，并且包含列表的position信息，实现增加、删除列表项。
+>3. 在2的基础上，增加或者删除后，所有项显示的position值需要同步更新，支持用户页面指定放置位置（如果用户指定的值超过最大值，最后一个项的位置+1，告诉用户位置过大，小于第一个位置放在第一个位置）。
+
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
