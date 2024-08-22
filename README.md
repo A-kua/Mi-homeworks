@@ -52,5 +52,6 @@
 >4. 编写一个具有ImageView、TextView、Button的页面。
 >5. 使用RecyclerView展示列表。
 >6. 点击按钮添加Item、删除Item。
+>7. 使用ViewPager实现滑动页面。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
