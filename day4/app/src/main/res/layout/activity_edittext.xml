@@ -15,28 +15,34 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/border_bg"
             android:drawableStart="@drawable/baseline_account_circle_24"
             android:drawablePadding="6dp"
             android:ems="10"
             android:hint="输入账号"
             android:imeOptions="actionNext"
-            android:inputType="text" />
+            android:inputType="text"
+            android:padding="8dp" />
 
         <EditText
+            android:layout_marginTop="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/border_bg"
             android:drawableStart="@drawable/baseline_password_24"
             android:drawablePadding="6dp"
             android:ems="10"
             android:hint="输入密码"
             android:imeOptions="actionDone"
-            android:inputType="numberPassword" />
+            android:inputType="numberPassword"
+            android:padding="8dp" />
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
+        android:background="@drawable/btn_style2"
         android:text="登录" />
 
 

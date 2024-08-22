@@ -1,5 +1,6 @@
 package fan.akua.day4.activities;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.text.Editable;
@@ -13,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import fan.akua.day4.R;
 
-public class EditActivity extends AppCompatActivity {
+public class EditActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
