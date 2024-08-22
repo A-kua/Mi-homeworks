@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程简单介绍了View间的继承关系；各简单布局的使用；TextView展示富文本；Button简单使用；
+    今日课程简单介绍了View间的继承关系；各简单布局的使用；TextView展示富文本；Button简单使用；ImageView简单使用；使用RecyclerView展示数据；
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
