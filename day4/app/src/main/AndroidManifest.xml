@@ -14,8 +14,8 @@
         tools:targetApi="31">
         <activity
             android:name=".activities.ShowActivity"
-            android:label="ShowActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="ShowActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +23,8 @@
         </activity>
         <activity
             android:name=".activities.RichActivity"
-            android:label="RichActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="RichActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +32,8 @@
         </activity>
         <activity
             android:name=".activities.BtnActivity"
-            android:label="BtnActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="BtnActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
@@ -41,8 +41,8 @@
         </activity>
         <activity
             android:name=".activities.EditActivity"
-            android:label="EditActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="EditActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
@@ -50,8 +50,17 @@
         </activity>
         <activity
             android:name=".activities.ImageActivity"
-            android:label="ImageActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="ImageActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RecyclerViewActivity"
+            android:exported="true"
+            android:label="RecyclerViewActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
