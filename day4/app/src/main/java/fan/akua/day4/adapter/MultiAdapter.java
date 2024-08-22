@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fan.akua.day4.R;
@@ -24,8 +25,9 @@ public class MultiAdapter extends RecyclerView.Adapter<MultiAdapter.MultiHolder>
     }
 
     public void commitData(List<Data> data) {
-        DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(new Data.DiffCallback(internalData, data), true);
-        internalData = data;
+        ArrayList<Data> temp = new ArrayList<>(data);
+        DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(new Data.DiffCallback(internalData, temp), false);
+        internalData = temp;
         diffResult.dispatchUpdatesTo(this);
     }
 
