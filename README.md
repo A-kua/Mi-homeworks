@@ -43,3 +43,9 @@
 >2. 使用ViewPager实现Fragment左右滑动；
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day3)
+
+## Day4
+
+>1. 练习使用TextView：完成富文本的下划线和删除线。
+
+[任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
