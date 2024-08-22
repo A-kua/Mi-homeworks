@@ -27,10 +27,10 @@
 
 ### 运行效果如下
 
-[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4/vx_images/Screen_recording_20240822_190555)
+[视频无法播放请点击我](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4/vx_images/Screen_recording_20240822_190555.mp4)
 
 <div>
-    <video src="vx_images/Screen_recording_20240822_190555"></video>
+    <video src="vx_images/Screen_recording_20240822_190555.mp4"></video>
 </div>
 
 
