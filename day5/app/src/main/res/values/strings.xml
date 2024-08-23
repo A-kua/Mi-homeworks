@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Day5</string>
+    <string name="input_keywords">      请输入关键字</string>
 </resources>
