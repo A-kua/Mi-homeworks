@@ -103,11 +103,11 @@
         app:layout_constraintTop_toBottomOf="@id/inputLayout" />
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="6dp"
-        android:text="隐私协议"
-        android:textColor="#0000ff"
+        android:text="同意《隐私协议》"
         app:layout_constraintBottom_toTopOf="@id/declare"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -117,15 +117,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-        android:text="使用声明"
-        android:textColor="#0000ff"
+        android:text="遇到问题"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="6dp"
+        android:src="@drawable/baseline_arrow_circle_left_24"
+        app:layout_constraintBottom_toBottomOf="@id/declare"
+        app:layout_constraintEnd_toStartOf="@id/declare"
+        app:layout_constraintTop_toTopOf="@id/declare" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+### 实现跳转
+
+![Activity](vx_images/114666220035039.png)
+
 ### 运行效果如下
 
-![运行](vx_images/216743911026265.png)
+![运行](vx_images/288686963182730.png)
