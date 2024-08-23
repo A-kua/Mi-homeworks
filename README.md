@@ -67,5 +67,7 @@
 >3. 使用RelativeLayout实现设置页面的布局。
 >4. 用ConstraintLayout实现应用的关于页面。
 
+>1. 实现[附图3]，使用最少布局层级，查看页面过度绘制情况。使用include优化代码，减少xml代码数量。
+
 
 [任务目录](day5)
