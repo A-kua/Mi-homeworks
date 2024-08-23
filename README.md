@@ -65,6 +65,7 @@
 >1. 实现一个布局，使其两个文本框层叠并显示在页面底部。（扩展：代码实现布局效果）
 >2. 使用LinearLayout和FrameLayout实现 [附图1] 的页面。（扩展：代码实现布局效果）
 >3. 使用RelativeLayout实现设置页面的布局。
+>4. 用ConstraintLayout实现应用的关于页面。
 
 
 [任务目录](day5)
