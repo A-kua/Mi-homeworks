@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程
+    今日课程介绍了常见的ViewGroup，重点讲和练习了LinearLayout、RelativeLayout、ConstraintLayout。
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
@@ -21,10 +21,10 @@
     <br>
 </div>
 
-1. [x] 暂无
+1. [x] 实现[附图3]，使用最少布局层级，查看页面过度绘制情况。使用include优化代码，减少xml代码数量。
 
 <div>
-    <a href="https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/raw/main/day4/app/release/app-release.apk?inline=false">Download Release App</a>
+    <a href="app/release/app-release.apk?inline=false">Download Release App</a>
     <br>
 </div>
 
@@ -38,6 +38,10 @@
 
 ![附图2](vx_images/543C657DE034202BF844E83A8420925B.jpg)
 
+附图3
+
+![附图3](vx_images/373914738805443.png)
+
 ## 课堂练习报告
 
 |                         |                         |
@@ -47,6 +51,6 @@
 
 ## 今日作业报告
 
-|      |      |
-| ---- | ---- |
-| 暂无 | 暂无 |
+|                      |      |
+| -------------------- | ---- |
+| [作业1](Day5-HW1.md) | 暂无 |
