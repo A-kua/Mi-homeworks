@@ -12,6 +12,7 @@
 1. [x] 实现一个布局，使其两个文本框层叠并显示在页面底部。（扩展：代码实现布局效果）
 2. [x] 使用LinearLayout和FrameLayout实现 [附图1] 的页面。（扩展：代码实现布局效果）
 3. [x] 使用RelativeLayout实现设置页面的布局。
+4. [x] 用ConstraintLayout实现 [附图2] 的页面。
 
 
 <div>
@@ -33,12 +34,16 @@
 
 ![附图1](vx_images/B88D7FBAA3E1D20A7C706F16DEF74819.jpg)
 
+附图2
+
+![附图2](vx_images/543C657DE034202BF844E83A8420925B.jpg)
+
 ## 课堂练习报告
 
 |                         |                         |
 | ----------------------- | ----------------------- |
 | [任务1](Day5-Train1.md) | [任务2](Day5-Train2.md) |
-| [任务3](Day5-Train3.md) | 暂无                    |
+| [任务3](Day5-Train3.md) | [任务3](Day5-Train4.md) |
 
 ## 今日作业报告
 
