@@ -59,3 +59,10 @@
 >3. 在2的基础上，增加或者删除后，所有项显示的position值需要同步更新，支持用户页面指定放置位置（如果用户指定的值超过最大值，最后一个项的位置+1，告诉用户位置过大，小于第一个位置放在第一个位置）。
 
 [任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day4)
+
+## Day5
+
+>1. 暂无
+
+
+[任务目录](https://partner-gitlab.mioffice.cn/nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao/homework/-/tree/main/day5)
