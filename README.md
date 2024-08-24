@@ -76,5 +76,6 @@
 >1. 使用Glide加载图片。
 >2. 练习EventBus。在ActivityB中发布事件，ActivityA中接收事件。
 >3. 使用BRVAH构造瀑布流布局，展示两列图片。
+>4. 使用SwipeRefreshLayout实现下拉加载。
 
 [任务目录](day6)
