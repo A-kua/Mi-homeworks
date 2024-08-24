@@ -30,6 +30,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.14"
     implementation libs.swiperefreshlayout
     implementation libs.gson
     implementation libs.mmkv
