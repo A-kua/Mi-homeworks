@@ -3,7 +3,7 @@
 相关的文件如下：
 1. [SwipeRefreshActivity.java](app/src/main/java/fan/akua/day6/activities/SwipeRefreshActivity.java)
 2. [TestAdapter2.java](app/src/main/java/fan/akua/day6/adapters/TestAdapter2.java)
-3. [activity_swiperefresh.xml](app/src/main/src/layout/activity_swiperefresh.xml)
+3. [activity_swiperefresh.xml](app/src/main/res/layout/activity_swiperefresh.xml)
 
 ### 引入库
 

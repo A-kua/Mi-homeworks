@@ -4,7 +4,7 @@
 1. [BRVAHActivity.java](app/src/main/java/fan/akua/day6/activities/BRVAHActivity.java)
 2. [TestAdapter.java](app/src/main/java/fan/akua/day6/adapters/TestAdapter.java)
 2. [ImgBean.java](app/src/main/java/fan/akua/day6/bean/ImgBean.java)
-3. [activity_brvah.xml](app/src/main/src/layout/activity_brvah.xml)
+3. [activity_brvah.xml](app/src/main/res/layout/activity_brvah.xml)
 
 ### 引入库
 
