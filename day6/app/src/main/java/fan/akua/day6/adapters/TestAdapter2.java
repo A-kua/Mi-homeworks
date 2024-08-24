@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.module.LoadMoreModule;
 import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
 import java.util.List;
@@ -16,7 +17,7 @@ import java.util.List;
 import fan.akua.day6.R;
 import fan.akua.day6.bean.ImgBean;
 
-public class TestAdapter2 extends BaseQuickAdapter<String, TestAdapter2.TestAdapter2Holder> {
+public class TestAdapter2 extends BaseQuickAdapter<String, TestAdapter2.TestAdapter2Holder> implements LoadMoreModule {
 
     public TestAdapter2(@Nullable List<String> data) {
         super(R.layout.item_test2, data);
