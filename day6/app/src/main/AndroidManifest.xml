@@ -45,6 +45,18 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.HW1Activity"
+            android:exported="true"
+            android:label="HW1Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Day6</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_mine">我的</string>
 </resources>
