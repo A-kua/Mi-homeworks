@@ -12,18 +12,22 @@
             android:id="@+id/start_tran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="翻转X" />
 
         <Button
             android:id="@+id/start_tran_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:text="翻转X用代码" />
 
         <Button
             android:id="@+id/start_fly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
             android:text="试试飞进来" />
     </LinearLayout>
 
@@ -35,21 +39,24 @@
             android:id="@+id/start_tran_tran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="翻转同时平移" />
 
         <Button
             android:id="@+id/start_tran_tran2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:text="翻转同时平移" />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
         android:layout_marginTop="24dp"
         android:background="@drawable/anim_frame" />
 
