@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程介绍了安卓的动画体系，练习了帧动画、补间动画。
+    今日课程介绍了安卓的动画体系，练习了帧动画、补间动画、属性动画。
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
@@ -13,6 +13,7 @@
 2. [x] 使用补间动画展示一段效果。
 3. [x] 使用scale展示一段效果。
 4. [x] 使用组合动画展示一段效果。
+5. [x] 使用属性动画，让view沿x轴翻转360°。
 
 <div>
     <br>
@@ -33,6 +34,7 @@
 | ----------------------- | ----------------------- |
 | [任务1](Day7-Train1.md) | [任务2](Day7-Train2.md) |
 | [任务3](Day7-Train3.md) | [任务4](Day7-Train4.md) |
+| [任务5](Day7-Train5.md) | 暂无                    |
 
 ## 今日作业报告
 

@@ -2,7 +2,7 @@
 
 相关的文件如下：
 1. [AlphaActivity.java](app/src/main/java/fan/akua/day7/activities/AlphaActivity.java)
-2. [anim_scale.xml](app/src/main/res/layout/anim_scale.xml)
+2. [anim_scale.xml](app/src/main/res/anim/anim_scale.xml)
 
 ### 编写anim
 

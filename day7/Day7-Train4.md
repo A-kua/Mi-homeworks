@@ -2,7 +2,7 @@
 
 相关的文件如下：
 1. [AlphaActivity.java](app/src/main/java/fan/akua/day7/activities/AlphaActivity.java)
-2. [anim_set.xml](app/src/main/res/layout/anim_set.xml)
+2. [anim_set.xml](app/src/main/res/anim/anim_set.xml)
 
 ### 编写anim
 
@@ -13,29 +13,29 @@
 代码较长
 ```java
 ScaleAnimation scaleAnimation = new ScaleAnimation(
-                    1f, 1.2f,
-                    1f, 1.2f,
-                    Animation.RELATIVE_TO_SELF, 0.5f,
-                    Animation.RELATIVE_TO_SELF, 0.5f
-            );
+        1f, 1.2f,
+        1f, 1.2f,
+        Animation.RELATIVE_TO_SELF, 0.5f,
+        Animation.RELATIVE_TO_SELF, 0.5f
+);
             scaleAnimation.setDuration(1000);
             scaleAnimation.setRepeatCount(4);
 
-            RotateAnimation rotateAnimation = new RotateAnimation(
-                    0f, 360f,
-                    Animation.RELATIVE_TO_SELF, 0.5f,
-                    Animation.RELATIVE_TO_SELF, 0.5f
-            );
+RotateAnimation rotateAnimation = new RotateAnimation(
+        0f, 360f,
+        Animation.RELATIVE_TO_SELF, 0.5f,
+        Animation.RELATIVE_TO_SELF, 0.5f
+);
             rotateAnimation.setDuration(1000);
 
-            AlphaAnimation alphaAnimation = new AlphaAnimation(
-                    1f, 0f
-            );
+AlphaAnimation alphaAnimation = new AlphaAnimation(
+        1f, 0f
+);
             alphaAnimation.setDuration(1000);
             alphaAnimation.setRepeatMode(Animation.REVERSE);
             alphaAnimation.setRepeatCount(5);
 
-            AnimationSet animationSet = new AnimationSet(true);
+AnimationSet animationSet = new AnimationSet(true);
             animationSet.addAnimation(scaleAnimation);
             animationSet.addAnimation(rotateAnimation);
             animationSet.addAnimation(alphaAnimation);
