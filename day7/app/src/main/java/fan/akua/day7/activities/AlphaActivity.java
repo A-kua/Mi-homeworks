@@ -2,8 +2,10 @@ package fan.akua.day7.activities;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,5 +32,15 @@ public class AlphaActivity extends AppCompatActivity {
             animation.setFillAfter(binding.swit.isChecked());
             binding.img.startAnimation(animation);
         });
+        TranslateAnimation animation = new TranslateAnimation(
+                Animation.RELATIVE_TO_SELF,0,
+                Animation.RELATIVE_TO_SELF,0.5f,
+                Animation.RELATIVE_TO_SELF,0,
+                Animation.RELATIVE_TO_SELF,0);
+        animation.setDuration(1000);
+        animation.setRepeatMode(Animation.REVERSE);
+        animation.setInterpolator(new AccelerateInterpolator());
+        animation.setFillAfter(true);
+        binding.img.startAnimation(animation);
     }
 }
