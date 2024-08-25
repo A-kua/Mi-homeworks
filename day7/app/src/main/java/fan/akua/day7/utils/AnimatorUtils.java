@@ -18,7 +18,7 @@ public class AnimatorUtils {
         return (float) ((View) paramView.getParent()).getWidth() / 2 + paramView.getWidth() / 2.0F - f;
     }
 
-    public static ObjectAnimator introAnimate(View targetLayout, float translationDis, int duration) {
+    public static void introAnimate(View targetLayout, float translationDis, int duration) {
         targetLayout.setPivotY(getDistanceToCenter(targetLayout));
         targetLayout.setPivotX(getDistanceToCenterX(targetLayout));
         targetLayout.setCameraDistance(10000.0F * targetLayout.getResources().getDisplayMetrics().density);
@@ -79,7 +79,6 @@ public class AnimatorUtils {
         localObjectAnimator8.start();
 
         targetLayout.setRotation(-50.0F);
-        return localObjectAnimator7;
     }
     public  static class QuadInOut implements TimeInterpolator {
         public float getInterpolation(float paramFloat) {
