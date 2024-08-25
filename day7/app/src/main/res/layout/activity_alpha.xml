@@ -29,6 +29,19 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始缩放动画" />
+
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="100dp"

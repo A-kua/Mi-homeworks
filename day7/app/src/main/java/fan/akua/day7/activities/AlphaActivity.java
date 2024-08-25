@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
 import androidx.annotation.Nullable;
@@ -32,15 +33,28 @@ public class AlphaActivity extends AppCompatActivity {
             animation.setFillAfter(binding.swit.isChecked());
             binding.img.startAnimation(animation);
         });
+        binding.startScale.setOnClickListener(v -> {
+            ScaleAnimation scaleAnimation = new ScaleAnimation(
+                    1f, 1.2f,
+                    1f, 1.2f,
+                    Animation.RELATIVE_TO_SELF, 0.5f,
+                    Animation.RELATIVE_TO_SELF, 0.5f);
+            scaleAnimation.setDuration(1000);
+            binding.img.startAnimation(scaleAnimation);
+        });
         TranslateAnimation animation = new TranslateAnimation(
-                Animation.RELATIVE_TO_SELF,0,
-                Animation.RELATIVE_TO_SELF,0.5f,
-                Animation.RELATIVE_TO_SELF,0,
-                Animation.RELATIVE_TO_SELF,0);
+                Animation.RELATIVE_TO_SELF, 0,
+                Animation.RELATIVE_TO_SELF, 0.5f,
+                Animation.RELATIVE_TO_SELF, 0,
+                Animation.RELATIVE_TO_SELF, 0);
         animation.setDuration(1000);
         animation.setRepeatMode(Animation.REVERSE);
         animation.setInterpolator(new AccelerateInterpolator());
         animation.setFillAfter(true);
         binding.img.startAnimation(animation);
+
+        Animation scaleAnim = AnimationUtils.loadAnimation(AlphaActivity.this, R.anim.anim_scale);
+        binding.getRoot().startAnimation(scaleAnim);
+
     }
 }
