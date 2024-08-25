@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/start_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始渐变动画" />
+
+        <Button
+            android:id="@+id/start_complex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始复杂动画" />
+
+        <Switch
+            android:id="@+id/swit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="不应用结果"
+            android:textOn="应用结果" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/anim_frame" />
+
+</LinearLayout>
