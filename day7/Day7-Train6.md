@@ -1,4 +1,4 @@
-# Day7-Train6
+## Day7-Train6
 
 相关的文件如下：
 1. [AnimatorActivity.java](app/src/main/java/fan/akua/day7/activities/AnimatorActivity.java)
