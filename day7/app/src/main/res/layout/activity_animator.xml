@@ -9,40 +9,28 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/start_alpha"
+            android:id="@+id/start_tran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="开始渐变动画" />
+            android:text="翻转X" />
 
         <Button
-            android:id="@+id/start_complex"
+            android:id="@+id/start_tran_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="开始复杂动画" />
+            android:text="翻转X用代码" />
 
-        <Switch
-            android:id="@+id/swit"
+        <Button
+            android:id="@+id/start_fly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textOff="不应用结果"
-            android:textOn="应用结果" />
-
+            android:text="试试飞进来" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/start_scale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="开始缩放动画" />
-        <Button
-            android:id="@+id/start_set"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="开始组合动画" />
 
 
     </LinearLayout>
