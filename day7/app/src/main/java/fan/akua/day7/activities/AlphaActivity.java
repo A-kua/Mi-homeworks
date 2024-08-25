@@ -1,10 +1,12 @@
 package fan.akua.day7.activities;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
@@ -28,11 +30,13 @@ public class AlphaActivity extends AppCompatActivity {
             animation.setFillAfter(binding.swit.isChecked());
             binding.img.startAnimation(animation);
         });
+
         binding.startComplex.setOnClickListener(v -> {
             Animation animation = AnimationUtils.loadAnimation(AlphaActivity.this, R.anim.anim_complex);
             animation.setFillAfter(binding.swit.isChecked());
             binding.img.startAnimation(animation);
         });
+
         binding.startScale.setOnClickListener(v -> {
             ScaleAnimation scaleAnimation = new ScaleAnimation(
                     1f, 1.2f,
@@ -42,6 +46,41 @@ public class AlphaActivity extends AppCompatActivity {
             scaleAnimation.setDuration(1000);
             binding.img.startAnimation(scaleAnimation);
         });
+
+        binding.startSet.setOnClickListener(v -> {
+            ScaleAnimation scaleAnimation = new ScaleAnimation(
+                    1f, 1.2f,
+                    1f, 1.2f,
+                    Animation.RELATIVE_TO_SELF, 0.5f,
+                    Animation.RELATIVE_TO_SELF, 0.5f
+            );
+            scaleAnimation.setDuration(1000);
+            scaleAnimation.setRepeatCount(4);
+
+            RotateAnimation rotateAnimation = new RotateAnimation(
+                    0f, 360f,
+                    Animation.RELATIVE_TO_SELF, 0.5f,
+                    Animation.RELATIVE_TO_SELF, 0.5f
+            );
+            rotateAnimation.setDuration(1000);
+
+            AlphaAnimation alphaAnimation = new AlphaAnimation(
+                    1f, 0f
+            );
+            alphaAnimation.setDuration(1000);
+            alphaAnimation.setRepeatMode(Animation.REVERSE);
+            alphaAnimation.setRepeatCount(5);
+
+            AnimationSet animationSet = new AnimationSet(true);
+            animationSet.addAnimation(scaleAnimation);
+            animationSet.addAnimation(rotateAnimation);
+            animationSet.addAnimation(alphaAnimation);
+
+            animationSet.setStartOffset(0);
+
+            binding.img.startAnimation(animationSet);
+        });
+
         TranslateAnimation animation = new TranslateAnimation(
                 Animation.RELATIVE_TO_SELF, 0,
                 Animation.RELATIVE_TO_SELF, 0.5f,
@@ -53,8 +92,7 @@ public class AlphaActivity extends AppCompatActivity {
         animation.setFillAfter(true);
         binding.img.startAnimation(animation);
 
-        Animation scaleAnim = AnimationUtils.loadAnimation(AlphaActivity.this, R.anim.anim_scale);
+        Animation scaleAnim = AnimationUtils.loadAnimation(AlphaActivity.this, R.anim.anim_set);
         binding.getRoot().startAnimation(scaleAnim);
-
     }
 }
