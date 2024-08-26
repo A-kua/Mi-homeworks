@@ -3,6 +3,8 @@ package fan.akua.day8.widgets;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -122,5 +124,71 @@ public class TestViewGroup extends ViewGroup {
             currentT = currentT + lineHeight;
             currentL = getPaddingLeft();
         }
+    }
+
+    private View draggedView = null;
+    private int draggedViewPosition = -1;
+
+    private float tmpX, tmpY;
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                // 记录被按下的 view 及其位置
+                draggedView = findViewUnder(event.getX(), event.getY());
+                draggedViewPosition = indexOfChild(draggedView);
+                Log.d("TestViewGroup", "draggedView " + draggedView + " index " + draggedViewPosition);
+                tmpX = event.getX();
+                tmpY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                // 如果有 view 被按下且正在移动
+                if (draggedView != null) {
+                    draggedView.setTranslationX(event.getX() - tmpX);
+                    draggedView.setTranslationY(event.getY() - tmpY);
+                    postInvalidateOnAnimation();
+                }
+                break;
+            case MotionEvent.ACTION_CANCEL:
+            case MotionEvent.ACTION_UP:
+                // 找到当前拖动 view 下方的 view
+                View viewUnder = findViewUnder(event.getX(), event.getY());
+                if (viewUnder != null && viewUnder != draggedView) {
+                    int newPosition = indexOfChild(viewUnder);
+                    // 交换两个 view 的位置
+                    swapViews(draggedViewPosition, newPosition);
+                }
+                // 重新布局
+                requestLayout();
+                // 重置拖动状态
+                draggedView.setTranslationX(0);
+                draggedView.setTranslationY(0);
+                draggedView = null;
+                draggedViewPosition = -1;
+                break;
+        }
+        return true;
+    }
+
+    private View findViewUnder(float x, float y) {
+        for (int i = 0; i < getChildCount(); i++) {
+            View child = getChildAt(i);
+            if (child.getVisibility() == VISIBLE
+                    && x >= child.getLeft() && x <= child.getRight()
+                    && y >= child.getTop() && y <= child.getBottom()) {
+                return child;
+            }
+        }
+        return null;
+    }
+
+    private void swapViews(int position1, int position2) {
+        View view1 = getChildAt(position1);
+        View view2 = getChildAt(position2);
+        removeViewAt(Math.max(position1, position2));
+        removeViewAt(Math.min(position1, position2));
+        addView(view2, Math.min(position1, position2));
+        addView(view1, Math.min(position1, position2));
     }
 }
