@@ -1,7 +1,7 @@
 ## Day8-HW1
 
 相关的文件如下：
-1. [test_attr.xml](app/src/main/res/values/test_attr.xml)
+1. [test_attr.xml](app/src/main/res/values/HW1Layout_attrs.xml)
 2. [HW1Layout.java](app/src/main/java/fan/akua/day8/widgets/HW1Layout.java)
 
 相比于任务2、3，多了一个自定义属性，既然如此那我就添加一个属性，控制是否可以拖动交换。
