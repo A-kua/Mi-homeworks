@@ -21,7 +21,6 @@ public final class PhotoImageView extends AppCompatImageView
     private final GestureDetector mGestureDetector;
     private final Matrix mShowMatrix;
 
-
     public PhotoImageView(Context context) {
         this(context, null);
     }

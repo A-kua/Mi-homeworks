@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <fan.akua.day8.widgets.HW1Layout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:canDragSwap="true">
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="C" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="CPP" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Kotlin" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Rust" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="NixLang" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="GoLang" />
+
+        <ScrollView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:padding="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="sdfghjkjhgfdsdfghjkloiuytrewsertyuiol,mnbvcdrtyuiolpoiuytgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgfdcvbnjkliuygfvgbnmklkjhg" />
+            </LinearLayout>
+        </ScrollView>
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Kotlin" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Rust" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="NixLang" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="GoLang" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="CPP" />
+
+        <fan.akua.day8.widgets.TouchCatchTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Python" />
+    </fan.akua.day8.widgets.HW1Layout>
+
+</LinearLayout>

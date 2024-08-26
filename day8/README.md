@@ -20,7 +20,8 @@
     <br>
 </div>
 
-1. 暂无
+1. [x] 完成“View云”效果。
+2. [x] 完成View跟随手势滑动。
 
 <div>
     <a href="app/release/app-release.apk?inline=false">Download Release App</a>
@@ -32,11 +33,11 @@
 |                         |                         |
 | ----------------------- | ----------------------- |
 | [任务1](Day8-Train1.md) | [任务2](Day8-Train2.md) |
-| [任务3](Day8-Train3.md) | [任务4](Day8-Train4.md)                    |
+| [任务3](Day8-Train3.md) | [任务4](Day8-Train4.md) |
 
 ## 今日作业报告
 
-|      |      |
-| ---- | ---- |
-| 暂无 | 暂无 |
+|                      |                      |
+| -------------------- | -------------------- |
+| [作业2](Day8-HW1.md) | [作业2](Day8-HW2.md) |
 

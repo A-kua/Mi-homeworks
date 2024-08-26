@@ -27,10 +27,6 @@ public class TestView extends View {
 
     public TestView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.test);
-        String text = ta.getString(R.styleable.test_testAttr);
-        int textAttr = ta.getInteger(R.styleable.test_text, -1);
-        ta.recycle();
     }
 
     @Override
