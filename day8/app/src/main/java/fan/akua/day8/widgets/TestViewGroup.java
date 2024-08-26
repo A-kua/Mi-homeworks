@@ -4,8 +4,10 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
@@ -17,17 +19,25 @@ public class TestViewGroup extends ViewGroup {
     private final List<List<View>> lines = new ArrayList<>();
     private final List<Integer> heights = new ArrayList<>();
 
+    private int mTouchSlop;
 
     public TestViewGroup(Context context) {
         super(context);
+        init();
     }
 
     public TestViewGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public TestViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
+    }
+
+    private void init() {
+        mTouchSlop = ViewConfiguration.get(getContext()).getScaledPagingTouchSlop();
     }
 
     @SuppressLint("DrawAllocation")
@@ -130,6 +140,12 @@ public class TestViewGroup extends ViewGroup {
     private int draggedViewPosition = -1;
 
     private float tmpX, tmpY;
+    private boolean isDragging;
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        return isDragging;
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -145,9 +161,12 @@ public class TestViewGroup extends ViewGroup {
             case MotionEvent.ACTION_MOVE:
                 // 如果有 view 被按下且正在移动
                 if (draggedView != null) {
-                    draggedView.setTranslationX(event.getX() - tmpX);
-                    draggedView.setTranslationY(event.getY() - tmpY);
-                    postInvalidateOnAnimation();
+                    if (Math.abs(event.getX() - tmpX) > mTouchSlop || Math.abs(event.getY() - tmpY) > mTouchSlop) {
+                        isDragging = true;
+                        draggedView.setTranslationX(event.getX() - tmpX);
+                        draggedView.setTranslationY(event.getY() - tmpY);
+                        postInvalidateOnAnimation();
+                    }
                 }
                 break;
             case MotionEvent.ACTION_CANCEL:

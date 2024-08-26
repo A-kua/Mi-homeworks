@@ -12,6 +12,7 @@
 1. [x] 自定义EditText，添加边框。
 2. [x] 自定义ViewGroup，实现FlowLayout效果。
 3. [x] 自定义ViewGroup，实现拖拽交互效果。
+4. [x] 自定义View，实现拖动、缩放、旋转的效果。
 
 <div>
     <br>
@@ -31,7 +32,7 @@
 |                         |                         |
 | ----------------------- | ----------------------- |
 | [任务1](Day8-Train1.md) | [任务2](Day8-Train2.md) |
-| [任务3](Day8-Train3.md) | 暂无                    |
+| [任务3](Day8-Train3.md) | [任务4](Day8-Train4.md)                    |
 
 ## 今日作业报告
 

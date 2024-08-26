@@ -8,79 +8,89 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="C" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="CPP" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="Kotlin" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="Rust" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="NixLang" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="GoLang" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="6dp"
-            android:text="CPP" />
+        <ScrollView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:padding="6dp">
 
-        <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="sdfghjkjhgfdsdfghjkloiuytrewsertyuiol,mnbvcdrtyuiolpoiuytgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgmnbvcdrtyuiolpoiuytgfdcvbnjkliuygfvgbnmklkjhgfdcvbnjkliuygfvgbnmklkjhg" />
+            </LinearLayout>
+        </ScrollView>
+
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="Kotlin" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="Rust" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="NixLang" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="GoLang" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
             android:text="CPP" />
 
-        <TextView
+        <fan.akua.day8.widgets.TouchCatchTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="6dp"
