@@ -33,7 +33,7 @@ public class LineEditText extends EditText {
 
     private void init() {
         paint.setStrokeWidth(1);
-        paint.setStyle(Paint.Style.STROKE );
+        paint.setStyle(Paint.Style.STROKE);
     }
 
     @Override
@@ -41,6 +41,7 @@ public class LineEditText extends EditText {
         super.onDraw(canvas);
         for (int i = 0; i < getLineCount(); i++) {
             getLineBounds(i, rect);
+            rect.top = rect.bottom;
             canvas.drawRect(rect, paint);
         }
     }

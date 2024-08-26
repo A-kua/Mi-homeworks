@@ -10,6 +10,7 @@
 </div>
 
 1. [x] 自定义EditText，添加边框。
+2. [x] 自定义ViewGroup，实现FlowLayout效果。
 
 <div>
     <br>
@@ -28,7 +29,7 @@
 
 |                         |      |
 | ----------------------- | ---- |
-| [任务1](Day8-Train1.md) | 暂无 |
+| [任务1](Day8-Train1.md) | [任务2](Day8-Train2.md) |
 
 ## 今日作业报告
 
