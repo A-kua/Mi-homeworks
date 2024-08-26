@@ -28,6 +28,7 @@ public class TestViewGroup extends ViewGroup {
         super(context, attrs, defStyleAttr);
     }
 
+    @SuppressLint("DrawAllocation")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         lines.clear();
@@ -41,7 +42,6 @@ public class TestViewGroup extends ViewGroup {
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
-        @SuppressLint("DrawAllocation")
         List<View> lineViews = new ArrayList<>();
         int lineWidth = 0;
         int lineHeight = 0;
@@ -52,6 +52,9 @@ public class TestViewGroup extends ViewGroup {
         int count = getChildCount();
         for (int i = 0; i < count; i++) {
             View view = getChildAt(i);
+
+            // 这玩意确实有必要
+            if (view.getVisibility() == View.GONE) continue;
 
             LayoutParams params = view.getLayoutParams();
 
@@ -108,14 +111,13 @@ public class TestViewGroup extends ViewGroup {
             List<View> views = lines.get(i);
 
             int lineHeight = heights.get(i);
-            for (int j = 0; j < views.size(); j++) {
-                View view = views.get(j);
-
+            for (View view : views) {
                 int right = currentL + view.getMeasuredWidth();
                 int bottom = currentT + view.getMeasuredHeight();
                 view.layout(currentL, currentT, right, bottom);
                 currentL = right;
             }
+
             // 每行都重置
             currentT = currentT + lineHeight;
             currentL = getPaddingLeft();
