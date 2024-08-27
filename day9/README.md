@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程介绍了安卓网络请求框架的发展历史，实战了okhttp的简单使用，同时还学习了Handler。
+    今日课程介绍了安卓网络请求框架的发展历史，实战了okhttp的简单使用，同时还学习了Handler，ThreadLocal。
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
@@ -15,6 +15,7 @@
 4. [x] okhttp请求加入拦截器。
 5. [x] 使用Handler完成倒计时效果。
 6. [x] 使用Retrofit请求，配合Gson解析。
+7. [x] 了解ThreadLocal。
 
 <div>
     <br>
@@ -36,6 +37,7 @@
 | [任务1](Day9-Train1.md) | [任务2](Day9-Train2.md) |
 | [任务3](Day9-Train3.md) | [任务4](Day9-Train4.md) |
 | [任务5](Day9-Train5.md) | [任务6](Day9-Train6.md) |
+| [任务7](Day9-Train7.md) | 暂无                    |
 
 ## 今日作业报告
 
