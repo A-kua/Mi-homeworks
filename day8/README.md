@@ -3,7 +3,7 @@
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
         <br>
     </p>
-    今日课程介绍；
+    今日课程介绍了自定义View、自定义ViewGroup、事件分发。
     <br><br>
     <p align="center"><strong>课堂练习</strong></p>
     <br>
