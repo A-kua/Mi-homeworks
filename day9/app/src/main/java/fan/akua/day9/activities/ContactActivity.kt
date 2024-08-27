@@ -46,7 +46,7 @@ class ContactActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         groupPermissionLauncher.launch(contactsPermissions)
-
+        signalPermissionLauncher.launch(Manifest.permission.CALL_PHONE)
         binding.read.setOnClickListener {
             if (ContextCompat.checkSelfPermission(
                     this,
@@ -64,7 +64,7 @@ class ContactActivity : AppCompatActivity() {
                     Manifest.permission.CALL_PHONE
                 ) != PackageManager.PERMISSION_GRANTED
             ) {
-                signalPermissionLauncher.launch(Manifest.permission.CALL_PHONE)
+                Snackbar.make(binding.root, "我权限呢？", Snackbar.LENGTH_SHORT).show()
             } else {
                 makeCall(binding.number.text.toString())
             }
