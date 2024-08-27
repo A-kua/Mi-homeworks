@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
 import fan.akua.day9.databinding.ActivityMainBinding
-import kotlin.math.log
 
 class CameraActivity : AppCompatActivity() {
     private lateinit var mCamera: Camera

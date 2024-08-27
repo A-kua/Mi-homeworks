@@ -5,25 +5,19 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/read"
+        android:id="@+id/sync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="读取一下联系人" />
+        android:text="同步" />
 
     <Button
-        android:id="@+id/call"
+        android:id="@+id/async"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="打电话" />
-
-    <EditText
-        android:id="@+id/number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10" />
+        android:text="异步" />
 
     <TextView
-        android:id="@+id/listStr"
+        android:id="@+id/resu"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
