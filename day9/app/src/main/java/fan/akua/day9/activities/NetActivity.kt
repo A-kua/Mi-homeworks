@@ -5,13 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import fan.akua.day9.R
 import fan.akua.day9.databinding.ActivityMainBinding
 import fan.akua.day9.databinding.ActivityNetBinding
+import fan.akua.day9.interceptors.AddHeaderInterceptor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.Callback
+import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import okhttp3.RequestBody
 import okhttp3.Response
 import java.io.IOException
 
@@ -25,7 +28,7 @@ class NetActivity : AppCompatActivity() {
         // 同步请求
         binding.sync.setOnClickListener {
             GlobalScope.launch {
-                val result = syncRequest("https://cs.ahu.edu.cn")
+                val result = syncRequest("https://httpbin.org/get")
                 runOnUiThread {
                     binding.resu.text = result ?: "Error"
                 }
@@ -33,11 +36,40 @@ class NetActivity : AppCompatActivity() {
         }
         // 异步请求
         binding.async.setOnClickListener {
-            asyncRequest("https://cs.ahu.edu.cn") { result ->
+            asyncRequest("https://httpbin.org/get") { result ->
                 runOnUiThread {
                     binding.resu.text = result ?: "Error"
                 }
             }
+        }
+        // post请求拦截器
+        binding.po.setOnClickListener {
+            val client = OkHttpClient.Builder()
+                .addInterceptor(AddHeaderInterceptor())
+                .build()
+            val formBody = FormBody.Builder()
+                .add("username", "测试账号")
+                .add("password", "123456")
+                .build();
+
+            val request = Request.Builder()
+                .post(formBody)
+                .url("https://httpbin.org/post")
+                .build()
+
+            client.newCall(request).enqueue(object : Callback {
+                override fun onFailure(call: okhttp3.Call, e: IOException) {
+                    runOnUiThread {
+                        binding.resu.text = "Error"
+                    }
+                }
+
+                override fun onResponse(call: okhttp3.Call, response: Response) {
+                    runOnUiThread {
+                        binding.resu.text = response.body()?.string()
+                    }
+                }
+            })
         }
     }
 
