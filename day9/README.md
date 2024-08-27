@@ -23,7 +23,8 @@
     <br>
 </div>
 
-1. 暂无
+1. [x] 相机权限请求。
+2. [x] Retrofit网络请求。
 
 <div>
     <a href="app/release/app-release.apk?inline=false">Download Release App</a>
@@ -41,7 +42,7 @@
 
 ## 今日作业报告
 
-|      |      |
-| ---- | ---- |
-| 暂无 | 暂无 |
+|                      |                      |
+| -------------------- | -------------------- |
+| [作业1](Day9-HW1.md) | [作业2](Day9-HW2.md) |
 
