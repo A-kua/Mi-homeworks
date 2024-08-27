@@ -16,7 +16,7 @@ import fan.akua.day9.databinding.ActivityMainBinding
 
 class CameraActivity : AppCompatActivity() {
     private lateinit var mCamera: Camera
-    private val cameraPermissionLauncher by lazy {
+    private val cameraPermissionLauncher =
         registerForActivityResult(
             ActivityResultContracts.RequestPermission()
         ) { isGranted ->
@@ -53,7 +53,7 @@ class CameraActivity : AppCompatActivity() {
                 Snackbar.make(window.decorView, "给我权限啊", Snackbar.LENGTH_SHORT).show()
             }
         }
-    }
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,12 +71,13 @@ class CameraActivity : AppCompatActivity() {
                 ) != PackageManager.PERMISSION_GRANTED
             ) {
                 Snackbar.make(it, "没授权呢", Snackbar.LENGTH_SHORT).show()
+                cameraPermissionLauncher.launch(Manifest.permission.CAMERA)
             } else {
                 mCamera.autoFocus(object : Camera.AutoFocusCallback {
                     override fun onAutoFocus(success: Boolean, camera: Camera?) {
                         mCamera.takePicture(null, null, object : Camera.PictureCallback {
                             override fun onPictureTaken(data: ByteArray?, camera: Camera?) {
-
+                                Snackbar.make(it, "拍照了，但是介于存储权限难于申请，这里就不写入了", Snackbar.LENGTH_SHORT).show()
                             }
                         })
                     }
