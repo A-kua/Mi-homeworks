@@ -22,6 +22,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Day9"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".activities.CameraActivity"
@@ -54,6 +55,15 @@
             android:name=".activities.HandlerActivity"
             android:exported="true"
             android:label="HandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ConvertActivity"
+            android:exported="true"
+            android:label="ConvertActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

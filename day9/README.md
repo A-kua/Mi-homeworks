@@ -14,6 +14,7 @@
 3. [x] okhttp网络请求。
 4. [x] okhttp请求加入拦截器。
 5. [x] 使用Handler完成倒计时效果。
+6. [x] 使用Retrofit请求，配合Gson解析。
 
 <div>
     <br>
@@ -34,7 +35,7 @@
 | ----------------------- | ----------------------- |
 | [任务1](Day9-Train1.md) | [任务2](Day9-Train2.md) |
 | [任务3](Day9-Train3.md) | [任务4](Day9-Train4.md) |
-| [任务5](Day9-Train5.md) | 暂无 |
+| [任务5](Day9-Train5.md) | [任务6](Day9-Train6.md) |
 
 ## 今日作业报告
 
