@@ -10,7 +10,7 @@ public class HWStrategy implements CheckStrategy {
     private final Runnable checkRunnable = new Runnable() {
         @Override
         public void run() {
-            _tickCount.set(0);
+            _tickCount.decrementAndGet();
             _reported = false;
         }
     };
