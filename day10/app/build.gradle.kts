@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("com.squareup.leakcanary:leakcanary-android:2.7")
     implementation(libs.anrwatchdog)
     implementation(libs.appcompat)
     implementation(libs.material)

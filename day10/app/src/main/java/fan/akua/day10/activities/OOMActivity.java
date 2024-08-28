@@ -1,5 +1,6 @@
 package fan.akua.day10.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -15,11 +16,8 @@ public class OOMActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityOomBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        binding.jump.setOnClickListener(v ->
+                startActivity(new Intent(OOMActivity.this, LeakActivity.class))
+        );
     }
 }
-/*
-强引用，宁愿Oom
-弱引用，只要gc就回收
-软引用，内存不够才回收
-虚引用，啥时候都可能回收
- */

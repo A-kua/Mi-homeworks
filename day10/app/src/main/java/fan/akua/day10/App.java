@@ -15,14 +15,11 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        new ANRWatchDog(5_000)
-                .setANRListener(error -> Log.e("!!!ANR_Ori!!!", "ANRWatchDog"))
-                .start();
-        new AkuaWatchDog()
+        new AkuaWatchDog(new HWStrategy())
                 .setCallBack(new Consumer<ANRError>() {
                     @Override
                     public void accept(ANRError anrError) {
-                        Log.e("!!!ANR_Akua!!!", "ANRWatchDog");
+                        Log.e("!!!ANR!!!", "AkuaANRWatchDog发现了ANR");
                     }
                 }).start();
     }
