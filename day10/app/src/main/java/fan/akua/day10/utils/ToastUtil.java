@@ -41,8 +41,3 @@ public class ToastUtil {
         Toast.makeText(context, text, Toast.LENGTH_LONG).show();
     }
 }
-/**
- * 使用了Activity的Context
- * 匿名内部类持有外部对象
- * 内部类持有外部对象
- */

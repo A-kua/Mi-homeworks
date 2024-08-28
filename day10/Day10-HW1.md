@@ -15,26 +15,26 @@
 
 ```java
     @Override
-    public void run() {
-        setName("|Akua-ANR-WatchDog|");
-        while (!isInterrupted()) {
-            if (_strategy.needPost())
-                _handler.post(_strategy.tickMessage());
-            try {
-                Thread.sleep(_strategy.sleepTime());
-            } catch (InterruptedException exception) {
-                if (_interruptListener != null)
-                    _interruptListener.accept(exception);
+public void run() {
+    setName("|Akua-ANR-WatchDog|");
+    while (!isInterrupted()) {
+        if (_strategy.needPost())
+            _handler.post(_strategy.tickMessage());
+        try {
+            Thread.sleep(_strategy.sleepTime());
+        } catch (InterruptedException exception) {
+            if (_interruptListener != null)
+                _interruptListener.accept(exception);
+        }
+        if (_anrConsumer != null && _strategy.isANR()) {
+            if (!_ignoreDebug && (Debug.isDebuggerConnected() || Debug.waitingForDebugger())) {
+                Log.w("AkuaWatchDog", "An ANR was detected but ignored because the debugger is connected (you can prevent this with setIgnoreDebugger(true))");
+                continue;
             }
-            if (_anrConsumer != null && _strategy.isANR()) {
-                if (!_ignoreDebug && (Debug.isDebuggerConnected() || Debug.waitingForDebugger())) {
-                    Log.w("AkuaWatchDog", "An ANR was detected but ignored because the debugger is connected (you can prevent this with setIgnoreDebugger(true))");
-                    continue;
-                }
-                _anrConsumer.accept(new ANRError());
-            }
+            _anrConsumer.accept(new ANRError());
         }
     }
+}
 ```
 
 策略接口如下
@@ -172,12 +172,12 @@ public class HWStrategy implements CheckStrategy {
 
 ```java
         new AkuaWatchDog(new HWStrategy())
-                .setCallBack(new Consumer<ANRError>() {
-                    @Override
-                    public void accept(ANRError anrError) {
-                        Log.e("!!!ANR!!!", "AkuaANRWatchDog发现了ANR");
-                    }
-                }).start();
+        .setCallBack(new Consumer<ANRError>() {
+    @Override
+    public void accept(ANRError anrError) {
+        Log.e("!!!ANR!!!", "AkuaANRWatchDog发现了ANR");
+    }
+}).start();
 ```
 
 ### 运行效果如下
