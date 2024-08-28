@@ -119,6 +119,7 @@ public class HWStrategy implements CheckStrategy {
     private final Runnable checkRunnable = new Runnable() {
         @Override
         public void run() {
+        // 老师说这里应该置0，我是觉得不该置0，应该减1
             _tickCount.decrementAndGet();
             _reported = false;
         }
