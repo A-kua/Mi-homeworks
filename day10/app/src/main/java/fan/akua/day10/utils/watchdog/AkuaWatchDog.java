@@ -74,7 +74,7 @@ public final class AkuaWatchDog extends Thread {
                     Log.w("AkuaWatchDog", "An ANR was detected but ignored because the debugger is connected (you can prevent this with setIgnoreDebugger(true))");
                     continue;
                 }
-                _anrConsumer.accept(new ANRError());
+                _anrConsumer.accept(ANRError.NewMainOnly());
             }
         }
     }
