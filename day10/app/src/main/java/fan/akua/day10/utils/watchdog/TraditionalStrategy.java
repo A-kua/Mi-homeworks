@@ -11,7 +11,6 @@ public class TraditionalStrategy implements CheckStrategy {
         public void run() {
             _lastTime = 0;
             _reported = false;
-            Log.e("simon", "recv");
         }
     };
 
@@ -34,13 +33,11 @@ public class TraditionalStrategy implements CheckStrategy {
 
     @Override
     public long sleepTime() {
-        Log.e("simon", "sleep");
         return _timeoutInterval;
     }
 
     @Override
     public boolean isANR() {
-        Log.e("simon", "check " + _lastTime + " " + _reported);
         boolean isANR = _lastTime != 0 && !_reported;
         if (isANR)
             _reported = true;
@@ -49,7 +46,6 @@ public class TraditionalStrategy implements CheckStrategy {
 
     @Override
     public Runnable tickMessage() {
-        Log.e("simon", "send");
         _lastTime = System.nanoTime();
         return checkRunnable;
     }

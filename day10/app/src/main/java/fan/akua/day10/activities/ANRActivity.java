@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import fan.akua.day10.utils.NormalDeadLock;
 import fan.akua.day10.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = MainActivity.class.getName();
+public class ANRActivity extends AppCompatActivity {
+    private static final String TAG = ANRActivity.class.getName();
     private final Object lock = new Object();
     private ActivityMainBinding binding;
 

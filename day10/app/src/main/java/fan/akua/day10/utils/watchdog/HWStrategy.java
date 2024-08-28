@@ -1,7 +1,5 @@
 package fan.akua.day10.utils.watchdog;
 
-import android.util.Log;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class HWStrategy implements CheckStrategy {

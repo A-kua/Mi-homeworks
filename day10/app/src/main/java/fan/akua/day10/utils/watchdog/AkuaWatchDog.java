@@ -1,6 +1,5 @@
 package fan.akua.day10.utils.watchdog;
 
-
 import android.os.Debug;
 import android.os.Handler;
 import android.os.Looper;
@@ -8,7 +7,7 @@ import android.util.Log;
 
 import java.util.function.Consumer;
 
-public class AkuaWatchDog extends Thread {
+public final class AkuaWatchDog extends Thread {
     private static final CheckStrategy DEFAULT_STRATEGY = new TraditionalStrategy();
 
     private final Handler _handler = new Handler(Looper.getMainLooper());
@@ -25,16 +24,34 @@ public class AkuaWatchDog extends Thread {
         _strategy = strategy;
     }
 
+    /**
+     * 设置ANR回调
+     *
+     * @param consumer 回调
+     * @return 链式调用
+     */
     public AkuaWatchDog setCallBack(Consumer<ANRError> consumer) {
         this._anrConsumer = consumer;
         return this;
     }
 
-    public AkuaWatchDog set_interruptListener(Consumer<InterruptedException> interruptListener) {
+    /**
+     * 设置WatchDog监听中止的回调
+     *
+     * @param interruptListener 中断回调
+     * @return 链式调用
+     */
+    public AkuaWatchDog setInterruptListener(Consumer<InterruptedException> interruptListener) {
         this._interruptListener = interruptListener;
         return this;
     }
 
+    /**
+     * 设置是否忽略Debug模式
+     *
+     * @param ignoreDebugger 是否忽略
+     * @return 链式调用
+     */
     public AkuaWatchDog setIgnoreDebugger(boolean ignoreDebugger) {
         _ignoreDebug = ignoreDebugger;
         return this;
