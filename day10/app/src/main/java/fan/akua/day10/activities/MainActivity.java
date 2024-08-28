@@ -1,7 +1,5 @@
 package fan.akua.day10.activities;
 
-import android.content.BroadcastReceiver;
-import android.content.ContentProvider;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,7 +7,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import fan.akua.day10.R;
+import fan.akua.day10.utils.NormalDeadLock;
 import fan.akua.day10.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,14 +22,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         new Thread(() -> {
-            synchronized (lock) {
-                try {
-                    Thread.sleep(10_000_000);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
+            while (true)
+                synchronized (lock) {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
-            }
         }).start();
+        NormalDeadLock.startDeadLockThreads();
     }
 
     public void anr(View view) throws InterruptedException {
