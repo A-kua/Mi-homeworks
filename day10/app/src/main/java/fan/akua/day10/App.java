@@ -3,8 +3,6 @@ package fan.akua.day10;
 import android.app.Application;
 import android.util.Log;
 
-import com.github.anrwatchdog.ANRWatchDog;
-
 import java.util.function.Consumer;
 
 import fan.akua.day10.utils.watchdog.ANRError;

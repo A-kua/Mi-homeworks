@@ -46,10 +46,10 @@ Activity中使用
 
 ```java
     // 全局Context使用Activity
-    public void leak1(View view) {
-        ToastUtil.getInstance(this).toastShort("生命周期不同步");
-        finish();
-    }
+public void leak1(View view) {
+    ToastUtil.getInstance(this).toastShort("生命周期不同步");
+    finish();
+}
 ```
 
 解决方案：换成Application即可，或者context.getApplication()
@@ -88,7 +88,7 @@ Activity引用View，在onDestroy时会断环成链，Listener随着View一起�
 
 内部类持有外部引用
 
-精通java就是好，可以随便秀
+精通java就是好，语法可以随便秀
 
 ```java
     public void outMethod() {
@@ -98,7 +98,6 @@ Activity引用View，在onDestroy时会断环成链，Listener随着View一起�
     public void leak3(View view) {
         // 哈哈，精通java就是爽
         class R implements Runnable {
-
             @Override
             public void run() {
                 try {
@@ -129,7 +128,7 @@ Timer、Broadcast、EventBus等需要解除注册的组件未解除。
     }
 ```
 
-解决方案：尽量用LifeCycler吧，这样不容易忘记。
+解决方案：取消注册即可。尽量用Lifecycle吧，这样不容易忘记。
 
 ### 场景5
 
@@ -188,4 +187,4 @@ Bitmap忘记recycle。
 
 ### 小结
 
-说实话上述的7个场景，都是因为**长生命周期**持有了**短生命周期**。对于安卓的组件，开发者还是尽量使用LifeCycle，可以大幅避免。
+说实话上述的7个场景，都是因为**长生命周期**持有了**短生命周期**。对于安卓的组件，开发者还是尽量使用Lifecycle，可以大幅避免。

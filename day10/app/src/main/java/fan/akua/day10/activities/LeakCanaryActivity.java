@@ -12,5 +12,7 @@ public class LeakCanaryActivity extends AppCompatActivity {
     }
 }
 /*
-在Activity的onDestroy()后，LeakCanary使用弱引用来跟踪Activity，结合gc机制判断Activity是否被回收，从而识别潜在的内存泄漏问题
+在Activity的onDestroy()后，
+LeakCanary使用弱引用来跟踪Activity，
+结合gc机制判断Activity是否被回收，从而识别潜在的内存泄漏问题
  */

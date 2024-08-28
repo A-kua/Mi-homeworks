@@ -1,7 +1,5 @@
 package fan.akua.day10.utils.watchdog;
 
-import android.util.Log;
-
 public class TraditionalStrategy implements CheckStrategy {
     private static final int DEFAULT_ANR_TIMEOUT = 5_000;
 
