@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:padding="6dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:transitionName="shareImg" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="shareTxt" />
+
+        <ToggleButton
+            android:id="@+id/star"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/baseline_star_border_24"
+            android:padding="6dp"
+            android:textOff=""
+            android:textOn="" />
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
