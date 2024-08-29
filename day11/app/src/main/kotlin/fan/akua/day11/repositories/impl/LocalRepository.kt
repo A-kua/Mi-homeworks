@@ -1,46 +1,28 @@
-package fan.akua.day11.api.impl
+package fan.akua.day11.repositories.impl
 
-import android.util.Log
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import fan.akua.day11.R
-import fan.akua.day11.api.Repository
 import fan.akua.day11.bean.ImageBean
 import fan.akua.day11.bean.StarableBean
 import fan.akua.day11.bean.TextBean
+import fan.akua.day11.repositories.Repository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-object LocalRepository : Repository {
-    private val _data = MutableSharedFlow<List<StarableBean>>()
-    override var data: SharedFlow<List<StarableBean>> = _data
+object LocalRepository : Repository<StarableBean> {
+    private val dataList = mutableListOf<StarableBean>()
 
-    private val starableList = mutableListOf<StarableBean>()
-
-    private fun emitData() {
-        CoroutineScope(Dispatchers.Default).launch {
-            _data.emit(starableList.toList())
-        }
-    }
-
-    override fun getData(): List<StarableBean> {
-        return starableList.toList()
-    }
-
-    override fun starOrUnstarData(id: Int, notify: Boolean) {
-        val item = starableList.find { it.id == id }
-        item?.let {
-            it.isStarred = !it.isStarred
-            if (notify)
-                emitData()
-        }
-    }
+    // 很关键
+    override var changeFlow: Flow<Int> = MutableSharedFlow(replay = 0)
+    override var data: List<StarableBean>
+        get() = dataList
+        set(value) {}
 
     init {
-        starableList.addAll(
+        dataList.addAll(
             mutableListOf(
                 ImageBean(R.drawable.a63758009_p0, false, 1),
                 TextBean(
@@ -77,8 +59,24 @@ object LocalRepository : Repository {
 
                 )
         )
-        emitData()
+
     }
 
+    override fun starOrUnstar(id: Int, notify: Boolean) {
+        dataList.mapIndexed { index, bean ->
+            if (bean.id == id) {
+                bean.isStarred = !bean.isStarred
+            }
+            if (notify)
+                emitData(index)
+            bean
+        }
+    }
+
+    private fun emitData(position: Int) {
+        CoroutineScope(Dispatchers.Default).launch {
+            (changeFlow as MutableSharedFlow<Int>).emit(position)
+        }
+    }
 
 }
