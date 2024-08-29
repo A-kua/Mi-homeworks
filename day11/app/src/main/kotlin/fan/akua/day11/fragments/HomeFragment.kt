@@ -22,6 +22,7 @@ import fan.akua.wrapper.vary.ktx.addModels
 import fan.akua.wrapper.vary.ktx.linear
 import fan.akua.wrapper.vary.ktx.recyclerAdapter
 import fan.akua.wrapper.vary.ktx.setup
+import fan.akua.wrapper.vary.ktx.staggered
 import kotlinx.coroutines.launch
 
 
@@ -34,7 +35,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
         rv = view.findViewById(R.id.rv)
 
-        rv.linear().setup {
+        rv.staggered(2).setup {
             addType<ImageBean>(R.layout.item_img)
             addType<TextBean>(R.layout.item_text)
             onBind {
