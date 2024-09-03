@@ -1,3 +1,11 @@
+# License
+
+This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+<span style="background-color: yellow; padding: 2px;">小米课堂进校园每日作业，直接拷贝自本人的gitlab。本项目仅供参考，如需拷贝、拓展，请遵守上述协议。</span>
+
+以下是原始内容：
+
 <div>
     <p align="center">
         <strong>nj-trainingcollege/miclassroom240819/androidgroup4/tanzhehao</strong>
